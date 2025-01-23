@@ -138,11 +138,11 @@
 - ***Infrastructures*** with a ***Building Level*** superior to 1, when destroyed, will revert back one level (but with the full ***Health Points*** of level they are now in), while ***Infrastructures*** with a ***Building Level*** of 1 will be completely erased. 
 - Disabling ***Infrastructures*** annuls any bonus they provide, alongside any production of ***Military Units*** (if they are being produced, it pauses the task), while erasing the need to pay the ***Upkeep***.
 
-***==============================================================================================================***
+<br/>***==============================================================================================================***<br/>
 
 ### ***Description, Attributes & Properties of Infrastructures***
 
-#### ***Recruitment Office*** <img title="[Infrastructure] - [Recruitment Office]" src="https://i.gyazo.com/600788dd1870fb29efe8fe42aa057b4d.png" alt="" data-align="center">
+#### **Recruitment Office***<br/><img title="[Infrastructure] - [Recruitment Office]" src="https://i.gyazo.com/600788dd1870fb29efe8fe42aa057b4d.png" alt="" data-align="center">
 
 ##### ***Description:***
 
@@ -164,7 +164,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Workshop***
+#### ***Workshop***<br/>
 
 <img title="[Infrastructure] - [Workshop]" src="https://i.gyazo.com/9e14a8c7b5f741be52ca0bdfe6e905ee.png" alt="" data-align="center">
 
@@ -188,7 +188,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Barracks*** <img title="[Infrastructure] - [Barracks]" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" alt="" data-align="center">
+#### ***Barracks***<br/><img title="[Infrastructure] - [Barracks]" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" alt="" data-align="center">
 
 ##### ***Description:***
 
@@ -211,7 +211,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Fortress*** <img title="[Infrastructure] - [Fortress]" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" alt="" data-align="center">
+#### ***Fortress***<br/><img title="[Infrastructure] - [Fortress]" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" alt="" data-align="center">
 
 ##### ***Description:***
 
@@ -237,7 +237,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Harbour*** <img title="[Infrastructure] - [Harbour]" src="https://i.gyazo.com/e8a7e64fd879ebc35ec0bdf25c7023f1.png" alt="" data-align="center">
+#### ***Harbour***<br/><img title="[Infrastructure] - [Harbour]" src="https://i.gyazo.com/e8a7e64fd879ebc35ec0bdf25c7023f1.png" alt="" data-align="center">
 
 ##### ***Description:***
 
@@ -255,7 +255,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Railway*** <img title="[Infrastructure] - [Railway]" src="https://i.gyazo.com/af6355ecea550bf83cb06c5070de3929.png" alt="" data-align="center">
+#### ***Railway***<br/><img title="[Infrastructure] - [Railway]" src="https://i.gyazo.com/af6355ecea550bf83cb06c5070de3929.png" alt="" data-align="center">
 
 ##### ***Description:***
 
@@ -273,7 +273,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Factory*** <img title="[Infrastructure] - [Factory]" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" alt="" data-align="center">
+#### ***Factory***<br/><img title="[Infrastructure] - [Factory]" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" alt="" data-align="center">
 
 ##### ***Description:***
 
@@ -294,7 +294,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Aerodrome***
+#### ***Aerodrome***<br/>
 
 <img src="https://i.gyazo.com/3a64b0fba103fd83b6d81437b3d73ff9.png" title="[Infrastructure] - [Aerodrome]" alt="" data-align="center">
 
@@ -314,7 +314,7 @@
 
 ***----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------***
 
-#### ***Capital Building***
+#### ***Capital Building***<br/>
 
 
 <img title="[Infrastructure] - [Capital Building]" src="https://i.gyazo.com/101d5b8cb10836cf5044dce3632f157e.png" alt="" data-align="center">
@@ -363,6 +363,8 @@
 | ***Bomber***        | ***50.000 £<br/>5.000 Kg of Iron Ore<br/>7.500 Kg of Lumber<br/>10.000 L of Oil***                       | ***?***                                                                             | ***20 Kg of Grain<br/>5 L of Oil***             | ***Aerodrome - I<br/>Factory - III*** |
 | ***Zeppelin***      | ***Unit Card***                                                                                          | ***24 Hours***                                                                      | ***?***                                         | ***X***                               |
 
+<br/>
+
 ### ***Military Unit's Combat Statistics***
 
 #### ***Table of Military Unit's Offensive Statistics***
@@ -385,6 +387,8 @@
 | ***Bomber***        | ***30.0 in Offence***               | ***3.0 in Offence***           | ***30.0 in Offence***         | ***6.0 in Offence***            | ***1.2 in Offence***            |
 | ***Zeppelin***      | ***5.0 in Offence***                | ***5.0 in Offence***           | ***5.0 in Offence***          | ***30.0 in Offence***           | ***6.0 in Offence***            |
 
+<br/>
+
 #### ***Table of Military Unit's Defensive Statistics***
 
 | ***Military Unit*** | ***Damage vs Terrestrial Targets*** | ***Damage vs Aerial Targets*** | ***Damage vs Naval Targets*** | ***Damage vs Infrastructures*** | ***Damage vs Province Morale*** |
@@ -404,6 +408,8 @@
 | ***Fighter***       | ***?***                             | ***?***                        | ***?***                       | ***?***                         | ***X***                         |
 | ***Bomber***        | ***30.0 in Defence***               | ***3.0 in Defence***           | ***30.0 in Defence***         | ***6.0 in Defence***            | ***X***                         |
 | ***Zeppelin***      | ***5.0 in Defence***                | ***5.0 in Defence***           | ***5.0 in Defence***          | ***30.0 in Defence***           | ***X***                         |
+
+<br/>
 
 ### ***Military Unit's Movement Statistics***
 
@@ -427,6 +433,8 @@
 | ***Bomber***        | ***?***                              | ***?***                                 | ***?***                       | ***144 Km/H***              |
 | ***Zeppelin***      | ***?***                              | ***?***                                 | ***?***                       | ***84 Km/H***               |
 
+### <br/>
+
 ### ***Military Unit's Health/Morale and Ranges Statistics***
 
 #### ***Table of Military Unit's Health Points/ Morale, Attack Range and View Range Statistics***
@@ -449,7 +457,7 @@
 | ***Bomber***        | ***80 Health / Morale***  | ***350 Km***       | ***24 Km / 48 Km***                   |
 | ***Zeppelin***      | ***160 Health / Morale*** | ***750 Km***       | ***24 Km / 48 Km***                   |
 
-***==============================================================================================================***
+<br/>***==============================================================================================================***<br/>
 
 ### ***Description, Attributes and Properties of Military Units***
 
