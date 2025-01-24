@@ -1,0 +1,4389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}/*[Prussian Coat]*/
+
+.markdown-body {
+  --base-size-4: 0.25rem;
+  --base-size-8: 0.5rem;
+  --base-size-16: 1rem;
+  --base-size-24: 1.5rem;
+  --base-size-40: 2.5rem;
+  --base-text-weight-normal: 400;
+  --base-text-weight-medium: 500;
+  --base-text-weight-semibold: 600;
+  --fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  --fgColor-accent: Highlight;
+}
+
+:root{										/* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */	
+	/*Ghost White*/
+	--ghostwhite-color-default-1: #F7F7FF;          					/*Lighter Opaque*/
+	--ghostwhite-color-default-1-transparent: #80F7F7FF;          		/*Lighter Transparent*/
+	--ghostwhite-color-default-2: #DBDBE2;      						/*Light Opaque*/
+	--ghostwhite-color-default-2-transparent: #80DBDBE2;      			/*Light Transparent*/
+	--ghostwhite-color-default-3: #C0C0C6;      						/*Lightning Opaque*/
+	--ghostwhite-color-default-3-transparent: #80C0C0C6;      			/*Lightning Transparent*/
+	--ghostwhite-color-default-4: #A4A4AA;      						/*Neutral Opaque*/
+	--ghostwhite-color-default-4-transparent: #80A4A4AA;      			/*Neutral Transparent*/
+	--ghostwhite-color-default-5: #89898D;        						/*Darkening Opaque*/
+	--ghostwhite-color-default-5-transparent: #8089898D;        		/*Darkening Transparent*/
+	--ghostwhite-color-default-6: #6D6D71;     		 					/*Dark Opaque*/
+	--ghostwhite-color-default-6-transparent: #806D6D71;     		 	/*Dark Transparent*/
+	--ghostwhite-color-default-7: #525255;								/*Darker Opaque*/
+	--ghostwhite-color-default-7-transparent: #80525255;				/*Darker Transparent*/
+	
+	/*Ironside Grey*/
+	--ironsidegrey-color-default-1: #4F4E4B;							/*Lighter Opaque*/
+	--ironsidegrey-color-default-1-transparent: #804F4E4B;				/*Lighter Transparent*/
+	--ironsidegrey-color-default-2: #444340;      						/*Light Opaque*/
+	--ironsidegrey-color-default-2-transparent: #80444340;        		/*Light Transparent*/
+	--ironsidegrey-color-default-3: #383835;      						/*Lightning Opaque*/
+	--ironsidegrey-color-default-3-transparent: #80383835;      		/*Lightning Transparent*/
+	--ironsidegrey-color-default-4: #2D2C2B;       						/*Neutral Opaque*/
+	--ironsidegrey-color-default-4-transparent: #802D2C2B;        		/*Neutral Transparent*/
+	--ironsidegrey-color-default-5: #222120;       						/*Darkening Opaque*/
+	--ironsidegrey-color-default-5-transparent: #80222120;        		/*Darkening Transparent*/
+	--ironsidegrey-color-default-6: #161615;        					/*Dark Opaque*/
+	--ironsidegrey-color-default-6-transparent: #80161615;        		/*Dark Transparent*/
+	--ironsidegrey-color-default-7: #0B0B0A;							/*Darker Opaque*/
+	--ironsidegrey-color-default-7-transparent: #800B0B0A;				/*Darker Transparent*/
+
+	/*Prussian Blue*/
+	--prussianblue-color-default-1: #002641;							/*Lighter Opaque*/
+	--prussianblue-color-default-1-transparent: #80002641;				/*Lighter Transparent*/
+	--prussianblue-color-default-2: #002038;      						/*Light Opaque*/
+	--prussianblue-color-default-2-transparent: #80002038;        		/*Light Transparent*/
+	--prussianblue-color-default-3: #001B2E;      						/*Lightning Opaque*/
+	--prussianblue-color-default-3-transparent: #80001B2E;      		/*Lightning Transparent*/
+	--prussianblue-color-default-4: #001525;       						/*Neutral Opaque*/
+	--prussianblue-color-default-4-transparent: #80001525;        		/*Neutral Transparent*/
+	--prussianblue-color-default-5: #00101C;       						/*Darkening Opaque*/
+	--prussianblue-color-default-5-transparent: #8000101C;        		/*Darkening Transparent*/
+	--prussianblue-color-default-6: #000A12;        					/*Dark Opaque*/
+	--prussianblue-color-default-6-transparent: #80000A12;        		/*Dark Transparent*/
+	--prussianblue-color-default-7: #000509;							/*Darker Opaque*/
+	--prussianblue-color-default-7-transparent: #80000509;				/*Darker Transparent*/
+	
+	/*Dried Red*/
+	--driedblood-color-default-1: #410000;								/*Lighter Opaque*/
+	--driedblood-color-default-1-transparent: #80410000;				/*Lighter Transparent*/
+	--driedblood-color-default-2: #390000;          					/*Light Opaque*/
+	--driedblood-color-default-2-transparent: #80390000;          		/*Light Transparent*/
+	--driedblood-color-default-3: #310000;      						/*Lightning Opaque*/
+	--driedblood-color-default-3-transparent: #80310000;      			/*Lightning Transparent*/
+	--driedblood-color-default-4: #290000;          					/*Neutral Opaque*/
+	--driedblood-color-default-4-transparent: #80290000;         	 	/*Neutral Transparent*/
+	--driedblood-color-default-5: #200000;        						/*Darkening Opaque*/
+	--driedblood-color-default-5-transparent: #80200000;        		/*Darkening Transparent*/
+	--driedblood-color-default-6: #180000;          					/*Dark Opaque*/
+	--driedblood-color-default-6-transparent: #80180000;         	 	/*Dark Transparent*/
+	--driedblood-color-default-7: #100000;								/*Darker Opaque*/
+	--driedblood-color-default-7-transparent: #80100000;				/*Darker Transparent*/
+	
+	/* Sepia Black */
+	--sepiablack-color-default-1: #2B0202;			/* Lighter */
+	--sepiablack-color-default-2: #260101;          /* Light */
+	--sepiablack-color-default-3: #210101;          /* Neutral */
+	--sepiablack-color-default-4: #180101;          /* Dark */
+	--sepiablack-color-default-5: #130000;			/* Darker */
+	
+	/* Dark */
+	--dark-color-default-1: #1B2431;				/* Lighter */
+	--dark-color-default-2: #171F2B;                /* Light */
+	--dark-color-default-3: #141B25;                /* Neutral */
+	--dark-color-default-4: #111720;                /* Dark */
+	--dark-color-default-5: #0B0F15;    			/* Darker */
+	
+	/* Mirage */
+	--mirage-color-default-1: #161928;				/* Lighter */
+	--mirage-color-default-2: #131624;              /* Light */
+	--mirage-color-default-3: #11131F;              /* Neutral */
+	--mirage-color-default-4: #0C0E16;              /* Dark */
+	--mirage-color-default-5: #090B12;  			/* Darker */
+	
+	/* Ebony */
+	--ebony-color-default-1: #0C0B1D;   			/* Lighter */
+	--ebony-color-default-2: #0B0A1C;               /* Light */
+	--ebony-color-default-3: #080815;               /* Neutral */
+	--ebony-color-default-4: #06050F;               /* Dark */
+	--ebony-color-default-5: #0d1117;   			/* Darker */
+	
+	/* Cinder */
+	--cinder-color-default-1: #0E0E18;  			/* Lighter */
+	--cinder-color-default-2: #0C0C15;              /* Light */
+	--cinder-color-default-3: #0A0A11;              /* Neutral */
+	--cinder-color-default-4: #08080F;              /* Dark */
+	--cinder-color-default-5: #05050A;				/* Darker */
+	
+	/* Git Blues */
+	--Gitblues-color-default-1: #151b23;		/* Lighter */
+	--gitblues-color-default-2: #0d1117;		/* Darker */
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown-body, [data-theme="dark"] {
+    /* dark */
+    color-scheme: dark;
+    --focus-outlineColor: #1f6feb;
+    --fgColor-default: #f0f6fc;
+    --fgColor-muted: #9198a1;
+    --fgColor-accent: #4493f8;
+    --fgColor-success: #3fb950;
+    --fgColor-attention: #d29922;
+    --fgColor-danger: #f85149;
+    --fgColor-done: #ab7df8;
+    --bgColor-default: #0d1117;
+    --bgColor-muted: #151b23;
+    --bgColor-neutral-muted: #656c7633;
+    --bgColor-attention-muted: #bb800926;
+    --borderColor-default: #3d444d;
+    --borderColor-muted: #3d444db3;
+    --borderColor-neutral-muted: #3d444db3;
+    --borderColor-accent-emphasis: #1f6feb;
+    --borderColor-success-emphasis: #238636;
+    --borderColor-attention-emphasis: #9e6a03;
+    --borderColor-danger-emphasis: #da3633;
+    --borderColor-done-emphasis: #8957e5;
+    --color-prettylights-syntax-comment: #9198a1;
+    --color-prettylights-syntax-constant: #79c0ff;
+    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+    --color-prettylights-syntax-entity: #d2a8ff;
+    --color-prettylights-syntax-storage-modifier-import: #f0f6fc;
+    --color-prettylights-syntax-entity-tag: #7ee787;
+    --color-prettylights-syntax-keyword: #ff7b72;
+    --color-prettylights-syntax-string: #a5d6ff;
+    --color-prettylights-syntax-variable: #ffa657;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+    --color-prettylights-syntax-brackethighlighter-angle: #9198a1;
+    --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+    --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+    --color-prettylights-syntax-carriage-return-bg: #b62324;
+    --color-prettylights-syntax-string-regexp: #7ee787;
+    --color-prettylights-syntax-markup-list: #f2cc60;
+    --color-prettylights-syntax-markup-heading: #1f6feb;
+    --color-prettylights-syntax-markup-italic: #f0f6fc;
+    --color-prettylights-syntax-markup-bold: #f0f6fc;
+    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+    --color-prettylights-syntax-markup-deleted-bg: #67060c;
+    --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+    --color-prettylights-syntax-markup-inserted-bg: #033a16;
+    --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+    --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+    --color-prettylights-syntax-markup-ignored-text: #f0f6fc;
+    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #3d444d;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .markdown-body, [data-theme="light"] {
+    /* light */
+    color-scheme: light;
+    --focus-outlineColor: #0969da;
+    --fgColor-default: #1f2328;
+    --fgColor-muted: #59636e;
+    --fgColor-accent: #0969da;
+    --fgColor-success: #1a7f37;
+    --fgColor-attention: #9a6700;
+    --fgColor-danger: #d1242f;
+    --fgColor-done: #8250df;
+    --bgColor-default: #ffffff;
+    --bgColor-muted: #f6f8fa;
+    --bgColor-neutral-muted: #818b981f;
+    --bgColor-attention-muted: #fff8c5;
+    --borderColor-default: #d1d9e0;
+    --borderColor-muted: #d1d9e0b3;
+    --borderColor-neutral-muted: #d1d9e0b3;
+    --borderColor-accent-emphasis: #0969da;
+    --borderColor-success-emphasis: #1a7f37;
+    --borderColor-attention-emphasis: #9a6700;
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-done-emphasis: #8250df;
+    --color-prettylights-syntax-comment: #59636e;
+    --color-prettylights-syntax-constant: #0550ae;
+    --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+    --color-prettylights-syntax-entity: #6639ba;
+    --color-prettylights-syntax-storage-modifier-import: #1f2328;
+    --color-prettylights-syntax-entity-tag: #0550ae;
+    --color-prettylights-syntax-keyword: #cf222e;
+    --color-prettylights-syntax-string: #0a3069;
+    --color-prettylights-syntax-variable: #953800;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+    --color-prettylights-syntax-brackethighlighter-angle: #59636e;
+    --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+    --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+    --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+    --color-prettylights-syntax-carriage-return-bg: #cf222e;
+    --color-prettylights-syntax-string-regexp: #116329;
+    --color-prettylights-syntax-markup-list: #3b2300;
+    --color-prettylights-syntax-markup-heading: #0550ae;
+    --color-prettylights-syntax-markup-italic: #1f2328;
+    --color-prettylights-syntax-markup-bold: #1f2328;
+    --color-prettylights-syntax-markup-deleted-text: #82071e;
+    --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+    --color-prettylights-syntax-markup-inserted-text: #116329;
+    --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+    --color-prettylights-syntax-markup-changed-text: #953800;
+    --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+    --color-prettylights-syntax-markup-ignored-text: #d1d9e0;
+    --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+    --color-prettylights-syntax-meta-diff-range: #8250df;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #818b98;
+  }
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: var(--ghostwhite-color-default-1);
+  background-color: var(--ironsidegrey-color-default-5);
+  width: 100%;
+  font-family: "Adobe Arabic","Old English","Times New Roman";
+  font-size: 18px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+.markdown-body details,                     /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
+.markdown-body figcaption,
+.markdown-body figure {
+  display: block;
+}
+
+.markdown-body summary {					/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary */
+  display: list-item;
+}
+
+.markdown-body [hidden] {
+  display: none !important;
+}
+
+.markdown-body a {
+  background-color: transparent;
+  color: var(--fgColor-accent);
+  text-decoration: none;
+}
+
+.markdown-body abbr[title] {				/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr */
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.markdown-body dfn {
+  font-style: italic;
+}
+
+.markdown-body mark {
+  background-color: var(--bgColor-attention-muted);
+  color: var(--fgColor-default);
+}
+
+.markdown-body small {
+  font-size: 90%;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body sup {
+  top: -0.5em;
+}
+
+.markdown-body img {						/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img */
+  border-style: 10px groove var (--driedblood-color-default-5);
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+  box-sizing: content-box;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.markdown-body figure {
+  margin: 1em var(--base-size-40);
+}
+
+.markdown-body hr {							/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr */
+  box-sizing: content-box;
+  background: transparent;
+  border-top: 5px solid var (--driedblood-color-default-5);
+  border-bottom: 5px solid var (--prussianblue-color-default-6);
+  height: 2.5px;
+  padding: 0;
+  margin: 10px 0;
+  background-color: var(--prussianblue-color-default-6);
+  background-radius: 5px;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body [type=button],
+.markdown-body [type=reset],
+.markdown-body [type=submit] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+.markdown-body [type=checkbox],
+.markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body [type=number]::-webkit-inner-spin-button,
+.markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.markdown-body [type=search]::-webkit-search-cancel-button,
+.markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+.markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  appearance: button;
+  font: inherit;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body ::placeholder {
+  color: var(--fgColor-muted);
+  opacity: 1;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+  border-top: 5px solid var (--driedblood-color-default-5);
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  font-variant: tabular-nums;
+  margin: auto;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body a:focus,
+.markdown-body [role=button]:focus,
+.markdown-body input[type=radio]:focus,
+.markdown-body input[type=checkbox]:focus {
+  outline: 2px solid var(--focus-outlineColor);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.markdown-body a:focus:not(:focus-visible),
+.markdown-body [role=button]:focus:not(:focus-visible),
+.markdown-body input[type=radio]:focus:not(:focus-visible),
+.markdown-body input[type=checkbox]:focus:not(:focus-visible) {
+  outline: solid 1px transparent;
+}
+
+.markdown-body a:focus-visible,
+.markdown-body [role=button]:focus-visible,
+.markdown-body input[type=radio]:focus-visible,
+.markdown-body input[type=checkbox]:focus-visible {
+  outline: 2px solid var(--focus-outlineColor);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.markdown-body a:not([class]):focus,
+.markdown-body a:not([class]):focus-visible,
+.markdown-body input[type=radio]:focus,
+.markdown-body input[type=radio]:focus-visible,
+.markdown-body input[type=checkbox]:focus,
+.markdown-body input[type=checkbox]:focus-visible {
+  outline-offset: 0;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: var(--base-size-4);
+  font: 11px var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+  line-height: 10px;
+  color: var(--fgColor-default);
+  vertical-align: middle;
+  background-color: var(--bgColor-muted);
+  border: solid 1px var(--borderColor-neutral-muted);
+  border-bottom-color: var(--borderColor-neutral-muted);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--borderColor-neutral-muted);
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: var(--base-size-24);
+  margin-bottom: var(--base-size-16);
+  font-weight: var(--base-text-weight-semibold, 600);
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  margin: 10px 0px 0px 0px;
+  padding-bottom: 0px;
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 6em;
+  /*-webkit-text-stroke-width: 3px;*/
+  /*-webkit-text-stroke-color: var(--driedblood-color-default-5);*/
+  /*color: var(--prussianblue-color-default-6);*/
+  text-align: center;
+  border-bottom: 0px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body h2 {
+  padding-bottom: 0px;
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 3em;
+  /*-webkit-text-stroke-width: 1.5px;*/
+  /*-webkit-text-stroke-color: var(--ghostwhite-color-default-1);*/
+  /*color: var(--prussianblue-color-default-1);*/
+  border-bottom: 0px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body h3 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1.5em;
+  /*-webkit-text-stroke-width: 0.75px;*/
+  /*-webkit-text-stroke-color: var(--ghostwhite-color-default-1);*/
+  /*color: var(--prussianblue-color-default-1);*/
+  border-bottom: 0px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body h4 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1.25em;
+  /*-webkit-text-stroke-width: 0.625px;*/
+  /*-webkit-text-stroke-color: var(--ghostwhite-color-default-1);*/
+  /*color: var(--prussianblue-color-default-1);*/
+  border-bottom: 0px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body h5 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1em;
+  /*-webkit-text-stroke-width: 0.5px;*/
+  /*-webkit-text-stroke-color: var(--ghostwhite-color-default-1);*/
+  /*color: var(--prussianblue-color-default-1);*/
+  border-bottom: 0px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body h6 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .875em;
+  /*-webkit-text-stroke-width: 0.4375px;*/
+  /*-webkit-text-stroke-color: var(--ghostwhite-color-default-1);*/
+  color: var(--ghostwhite-color-default-1);
+  border-bottom: 0px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {					/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote */
+  margin: 10px 30px 20px 30px;
+  padding: 7px 7px 7px 12px;
+  color: var(--ghostwhite-color-default-4);
+  background-color: var(--prussianblue-color-default-6);
+  border-right: 5px solid var(--driedblood-color-default-5);
+  border-left: 5px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body tt,
+.markdown-body code,
+.markdown-body samp {
+  font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-body input::-webkit-outer-spin-button,
+.markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.markdown-body .mr-2 {
+  margin-right: var(--base-size-8, 8px) !important;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .absent {
+  color: var(--fgColor-danger);
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: var(--base-size-4);
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+  margin-top: 0;
+  margin-bottom: var(--base-size-16);
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: var(--fgColor-default);
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+  padding: 0 .2em;
+  font-size: inherit;
+}
+
+.markdown-body summary h1,
+.markdown-body summary h2,
+.markdown-body summary h3,
+.markdown-body summary h4,
+.markdown-body summary h5,
+.markdown-body summary h6 {
+  display: inline-block;
+}
+
+.markdown-body summary h1 .anchor,
+.markdown-body summary h2 .anchor,
+.markdown-body summary h3 .anchor,
+.markdown-body summary h4 .anchor,
+.markdown-body summary h5 .anchor,
+.markdown-body summary h6 .anchor {
+  margin-left: -40px;
+}
+
+.markdown-body summary h1,
+.markdown-body summary h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.markdown-body ol[type="a s"] {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body ol[type="A s"] {
+  list-style-type: upper-alpha;
+}
+
+.markdown-body ol[type="i s"] {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol[type="I s"] {
+  list-style-type: upper-roman;
+}
+
+.markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.markdown-body div>ol:not([type]) {
+  list-style-type: decimal;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: var(--base-size-16);
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: var(--base-size-16);
+  font-size: 1em;
+  font-style: italic;
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.markdown-body dl dd {
+  padding: 0 var(--base-size-16);
+  margin-bottom: var(--base-size-16);
+}
+
+.markdown-body table th {
+  font-weight: var(--base-text-weight-semibold, 600);
+  background-color: var(--prussianblue-color-default-7);
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 10px 15px;
+  border: 5px solid var(--driedblood-color-default-5);
+}
+
+.markdown-body table td>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table tr:nth-child(2n+1) {
+  background-color: var(--prussianblue-color-default-6);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--prussianblue-color-default-7);
+}
+	
+.markdown-body table img {
+  background-color: transparent;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.markdown-body span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--borderColor-default);
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--fgColor-default);
+}
+
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body code,
+.markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--bgColor-neutral-muted);
+  border-radius: 6px;
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+  display: none;
+}
+
+.markdown-body del code {
+  text-decoration: inherit;
+}
+
+.markdown-body samp {
+  font-size: 85%;
+}
+
+.markdown-body pre code {
+  font-size: 100%;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: var(--base-size-16);
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: var(--base-size-16);
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: var(--fgColor-default);
+  background-color: var(--bgColor-muted);
+  border-radius: 6px;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body .csv-data td,
+.markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-body .csv-data .blob-num {
+  padding: 10px var(--base-size-8) 9px;
+  text-align: right;
+  background: var(--bgColor-default);
+  border: 0;
+}
+
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.markdown-body .csv-data th {
+  font-weight: var(--base-text-weight-semibold, 600);
+  background: var(--bgColor-muted);
+  border-top: 0;
+}
+
+.markdown-body [data-footnote-ref]::before {
+  content: "[";
+}
+
+.markdown-body [data-footnote-ref]::after {
+  content: "]";
+}
+
+.markdown-body .footnotes {
+  font-size: 12px;
+  color: var(--fgColor-muted);
+  border-top: 1px solid var(--borderColor-default);
+}
+
+.markdown-body .footnotes ol {
+  padding-left: var(--base-size-16);
+}
+
+.markdown-body .footnotes ol ul {
+  display: inline-block;
+  padding-left: var(--base-size-16);
+  margin-top: var(--base-size-16);
+}
+
+.markdown-body .footnotes li {
+  position: relative;
+}
+
+.markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: calc(var(--base-size-8)*-1);
+  right: calc(var(--base-size-8)*-1);
+  bottom: calc(var(--base-size-8)*-1);
+  left: calc(var(--base-size-24)*-1);
+  pointer-events: none;
+  content: "";
+  border: 2px solid var(--borderColor-accent-emphasis);
+  border-radius: 6px;
+}
+
+.markdown-body .footnotes li:target {
+  color: var(--fgColor-default);
+}
+
+.markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+.markdown-body body:has(:modal) {
+  padding-right: var(--dialog-scrollgutter) !important;
+}
+
+.markdown-body .pl-c {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: var(--color-prettylights-syntax-storage-modifier-import);
+}
+
+.markdown-body .pl-ent {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.markdown-body .pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.markdown-body .pl-bu {
+  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+}
+
+.markdown-body .pl-ii {
+  color: var(--color-prettylights-syntax-invalid-illegal-text);
+  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+}
+
+.markdown-body .pl-c2 {
+  color: var(--color-prettylights-syntax-carriage-return-text);
+  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-string-regexp);
+}
+
+.markdown-body .pl-ml {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-heading);
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: var(--color-prettylights-syntax-markup-italic);
+}
+
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+
+.markdown-body .pl-md {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+.markdown-body .pl-mi1 {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.markdown-body .pl-mc {
+  color: var(--color-prettylights-syntax-markup-changed-text);
+  background-color: var(--color-prettylights-syntax-markup-changed-bg);
+}
+
+.markdown-body .pl-mi2 {
+  color: var(--color-prettylights-syntax-markup-ignored-text);
+  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
+}
+
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+
+.markdown-body .pl-ba {
+  color: var(--color-prettylights-syntax-brackethighlighter-angle);
+}
+
+.markdown-body .pl-sg {
+  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: var(--color-prettylights-syntax-constant-other-reference-link);
+}
+
+.markdown-body [role=button]:focus:not(:focus-visible),
+.markdown-body [role=tabpanel][tabindex="0"]:focus:not(:focus-visible),
+.markdown-body button:focus:not(:focus-visible),
+.markdown-body summary:focus:not(:focus-visible),
+.markdown-body a:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+.markdown-body [tabindex="0"]:focus:not(:focus-visible),
+.markdown-body details-dialog:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.markdown-body g-emoji {
+  display: inline-block;
+  min-width: 1ch;
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: var(--base-text-weight-normal, 400);
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+
+.markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item label {
+  font-weight: var(--base-text-weight-normal, 400);
+}
+
+.markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: var(--base-size-4);
+}
+
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.markdown-body .task-list-item-checkbox {
+  margin: 0 .2em .25em -1.4em;
+  vertical-align: middle;
+}
+
+.markdown-body ul:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.markdown-body ol:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.markdown-body .contains-task-list:hover .task-list-item-convert-container,
+.markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+  display: block;
+  width: auto;
+  height: 24px;
+  overflow: visible;
+  clip: auto;
+}
+
+.markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+
+.markdown-body .markdown-alert {
+  padding: var(--base-size-8) var(--base-size-16);
+  margin-bottom: var(--base-size-16);
+  color: inherit;
+  border-left: .25em solid var(--borderColor-default);
+}
+
+.markdown-body .markdown-alert>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body .markdown-alert>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body .markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: var(--base-text-weight-medium, 500);
+  align-items: center;
+  line-height: 1;
+}
+
+.markdown-body .markdown-alert.markdown-alert-note {
+  border-left-color: var(--borderColor-accent-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--fgColor-accent);
+}
+
+.markdown-body .markdown-alert.markdown-alert-important {
+  border-left-color: var(--borderColor-done-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--fgColor-done);
+}
+
+.markdown-body .markdown-alert.markdown-alert-warning {
+  border-left-color: var(--borderColor-attention-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--fgColor-attention);
+}
+
+.markdown-body .markdown-alert.markdown-alert-tip {
+  border-left-color: var(--borderColor-success-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--fgColor-success);
+}
+
+.markdown-body .markdown-alert.markdown-alert-caution {
+  border-left-color: var(--borderColor-danger-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--fgColor-danger);
+}
+
+.markdown-body>*:first-child>.heading-element:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .highlight pre:has(+.zeroclipboard-container) {
+  min-height: 52px;
+}</style>
+</head>
+<body>
+  <article class="markdown-body"><img data-align="center" alt="" title="[Generals's Conference]" src="https://www.supremacy1914.com/uploads/pics/1718868634_news_images_30837.png">
+
+<h1 class="atx" id="leadersand39s-pocket-manual"><strong><em>Leaders's Pocket Manual</em></strong></h1>
+<hr>
+<h2 class="atx" id="table-of-content"><strong><em>Table of Content</em></strong></h2>
+<ol>
+<li><a href="#resources-and-provinces"><strong><em>Resources and Provinces</em></strong></a> <strong><em>[Link to be posted]</em></strong><ol>
+<li><a href="#resources"><strong><em>Resources</em></strong></a><ol>
+<li><strong><em>Type of Resources</em></strong><ol>
+<li><strong><em>Food Resources</em></strong></li>
+<li><strong><em>Construction Material Resources</em></strong></li>
+<li><strong><em>Energy Resources</em></strong></li>
+<li><strong><em>Monetary Resources</em></strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#provinces"><strong><em>Provinces</em></strong></a><ol>
+<li><strong><em>Province Types</em></strong><ol>
+<li><strong><em>Single Resources</em></strong></li>
+<li><strong><em>Double Resources</em></strong></li>
+</ol>
+</li>
+<li><strong><em>Province Morale</em></strong><ol>
+<li><strong><em>Description</em></strong></li>
+<li><strong><em>Solutions</em></strong></li>
+</ol>
+</li>
+<li></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#infrastructures"><strong><em>Infrastructures</em></strong></a> <strong><em>[Link to be posted]</em></strong><ol>
+<li><strong><em>Table of Infrastructures's Development</em></strong></li>
+<li><strong><em>Properties and Attributes of Infrastructures</em></strong><ol>
+<li><strong><em>Recruitment Office</em></strong></li>
+<li><strong><em>Workshop</em></strong></li>
+<li><strong><em>Barracks</em></strong></li>
+<li><strong><em>Fortress</em></strong></li>
+<li><strong><em>Harbour</em></strong></li>
+<li><strong><em>Railway</em></strong></li>
+<li><strong><em>Factory</em></strong></li>
+<li><strong><em>Aerodrome</em></strong></li>
+<li><strong><em>Capital Building</em></strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#military-units"><strong><em>Military Units</em></strong></a> <strong><em>[Link to be posted]</em></strong><ol>
+<li><strong><em>Terrestrial Military Complex</em></strong><ol>
+<li><strong><em>Melee Based Units</em></strong><ol>
+<li><strong><em>Infantry</em></strong></li>
+<li><strong><em>Cavalry</em></strong></li>
+<li><strong><em>Armoured Car</em></strong></li>
+<li><strong><em>Tank</em></strong></li>
+<li><strong><em>Heavy Tank</em></strong></li>
+<li><strong><em>Storm Trooper</em></strong></li>
+</ol>
+</li>
+<li><strong><em>Ranged Based Units</em></strong><ol>
+<li><strong><em>Artillery</em></strong></li>
+<li><strong><em>Railroad Gun</em></strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong><em>Naval Military Complex</em></strong><ol>
+<li><strong><em>Melee Based Units</em></strong><ol>
+<li><strong><em>Submarine</em></strong></li>
+</ol>
+</li>
+<li><strong><em>Ranged Based Units</em></strong><ol>
+<li><strong><em>Light Cruiser</em></strong></li>
+<li><strong><em>Battleship</em></strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong><em>Aerial Military Complex</em></strong><ol>
+<li><strong><em>Melee Based Units</em></strong><ol>
+<li><strong><em>Balloon</em></strong></li>
+</ol>
+</li>
+<li><strong><em>Ranged Based Units</em></strong><ol>
+<li><strong><em>Fighter</em></strong></li>
+<li><strong><em>Bomber</em></strong></li>
+<li><strong><em>Zeppelin</em></strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
+</li>
+<li><a href="#cards-boostersspeedups-medals"><strong><em>Cards, Boosters/Speedups and Medals</em></strong></a> <strong><em>[Link to be posted]</em></strong><ol>
+<li><strong><em>Boosters</em></strong><ol>
+<li><strong><em>Boosters Types</em></strong><ol>
+<li><strong><em>Economic Boosters</em></strong></li>
+<li><strong><em>Military Boosters</em></strong></li>
+</ol>
+</li>
+<li></li>
+</ol>
+</li>
+<li><strong><em>Speedups</em></strong><ol>
+<li><strong><em>Speedups Types</em></strong><ol>
+<li><strong><em>Construction Speedups</em></strong></li>
+<li><strong><em>Production Speedups</em></strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong><em>Shards</em></strong></li>
+<li></li>
+</ol>
+</li>
+<li><a href="#Espionage"><strong><em>Espionage</em></strong></a> <strong><em>[Link to be posted]</em></strong></li>
+<li>[<strong><em>Scenarios and Round Types</em></strong>](#Scenarios and Round Types) <strong><em>[Link to be posted]</em></strong></li>
+<li>[<strong><em>Victory Conditions and How to Achieve Them</em></strong>](#Victory Conditions and How to Achieve Them) <strong><em>[Link to be posted]</em></strong></li>
+<li>[<strong><em>General's Dossier</em></strong>](#General's Dossier) <strong><em>[Link to be posted]</em></strong></li>
+<li><a href="#Premium"><strong><em>Premium</em></strong></a> <strong><em>[Link to be posted]</em></strong></li>
+</ol>
+<hr>
+<hr>
+<h2 class="atx" id="military-units-morale"><strong><em>Military Units Morale</em></strong></h2>
+<hr>
+<hr>
+<h2 class="atx" id="resources-and-provinces"><strong><em>Resources and Provinces</em></strong></h2>
+<hr>
+<hr>
+<h2 class="atx" id="infrastructures"><strong><em>Infrastructures</em></strong></h2>
+<h3 class="atx" id="infrastructuresand39s-construction-statistics"><strong><em>Infrastructures's Construction Statistics</em></strong></h3>
+<h4 class="atx" id="table-of-infrastructuresand39s-construction-statistics"><strong><em>Table of Infrastructures's Construction Statistics</em></strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Building Cost</em></strong></th>
+<th align="center"><strong><em>Building Time&nbsp;<sup>1</sup></em></strong></th>
+<th align="center"><strong><em>Health Points</em></strong></th>
+<th align="center"><strong><em>Daily Upkeep</em></strong></th>
+<th align="center"><strong><em>Activation / Deactivation</em></strong></th>
+<th align="center"><strong><em>Availability Day</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Recruitment Office<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/600788dd1870fb29efe8fe42aa057b4d.png" title="[Infrastructure] - [Recruitment Office]"></td>
+<td align="center"><strong><em>500 £<br>250 Kg of Iron Ore<br>250 Kg of Lumber</em></strong></td>
+<td align="center"><strong><em>1 Minute</em></strong></td>
+<td align="center"><strong><em>5 Health Points</em></strong></td>
+<td align="center"><strong><em>200 £</em></strong></td>
+<td align="center"><strong><em>Yes</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Workshop<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/9e14a8c7b5f741be52ca0bdfe6e905ee.png" title="[Infrastructure] - [Workshop]"></td>
+<td align="center"><strong><em>1.000 £<br>500 Kg of Iron Ore<br>500 Kg of Lumber<br>500 L of Oil</em></strong></td>
+<td align="center"><strong><em>15 Seconds</em></strong></td>
+<td align="center"><strong><em>5 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Workshop<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/9e14a8c7b5f741be52ca0bdfe6e905ee.png" title="[Infrastructure] - [Workshop]"></td>
+<td align="center"><strong><em>1.000 £<br>500 Kg of Iron Ore<br>500 Kg of Lumber<br>500 L of Oil</em></strong></td>
+<td align="center"><strong><em>30 Minutes</em></strong></td>
+<td align="center"><strong><em>10 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Barracks<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" title="[Infrastructure] - [Barracks]"></td>
+<td align="center"><strong><em>4.000 £<br>1.500 Kg of Grain<br>1.500 Kg of Lumber</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>500 £<br>1.000 Kg of Grain<br>(41 Kg/H)</em></strong></td>
+<td align="center"><strong><em>Yes</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Barracks<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" title="[Infrastructure] - [Barracks]"></td>
+<td align="center"><strong><em>4.000 £<br>1.500 Kg of Grain<br>1.500 Kg of Lumber</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>1.000 £<br>2.000 Kg of Grain<br>(83 Kg/H)</em></strong></td>
+<td align="center"><strong><em>Yes</em></strong></td>
+<td align="center"><strong><em>Day 2</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>4.000 £<br>2.000 Kg of Iron Ore</em></strong></td>
+<td align="center"><strong><em>8 Hours</em></strong></td>
+<td align="center"><strong><em>50 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>4.000 £<br>2.000 Kg of Iron Ore</em></strong></td>
+<td align="center"><strong><em>16 Hours</em></strong></td>
+<td align="center"><strong><em>50 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 2</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level III<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>4.000 £<br>2.000 Kg of Iron Ore</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>50 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 3</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level IV<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>4.000 £<br>2.000 Kg of Iron Ore</em></strong></td>
+<td align="center"><strong><em>32 Hours</em></strong></td>
+<td align="center"><strong><em>50 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 4</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level V<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>4.000 £<br>2.000 Kg of Iron Ore</em></strong></td>
+<td align="center"><strong><em>40 Hours</em></strong></td>
+<td align="center"><strong><em>50 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 5</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Harbour<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/e8a7e64fd879ebc35ec0bdf25c7023f1.png" title="[Infrastructure] - [Harbour]"></td>
+<td align="center"><strong><em>10.000 £<br>10.000 Kg of Lumber</em></strong></td>
+<td align="center"><strong><em>72 Hours</em></strong></td>
+<td align="center"><strong><em>60 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 2</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railway<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/af6355ecea550bf83cb06c5070de3929.png" title="[Infrastructure] - [Railway]"></td>
+<td align="center"><strong><em>10.000 £<br>3.000 Kg of Iron Ore<br>5.000 Kg of Lumber<br>1.000 Kg of Coal</em></strong></td>
+<td align="center"><strong><em>72 Hours</em></strong></td>
+<td align="center"><strong><em>60 Health Points</em></strong></td>
+<td align="center"><strong><em>500 Kg of Coal<br>(20 Kg/H)</em></strong></td>
+<td align="center"><strong><em>Yes</em></strong></td>
+<td align="center"><strong><em>Day 3</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>10.000 £<br>2.500 Kg of Iron Ore<br>2.500 Kg of Lumber<br>2.500 L of Oil</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 6</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>10.000 £<br>2.500 Kg of Iron Ore<br>2.500 Kg of Lumber<br>2.500 L of Oil</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 7</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level III<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>10.000 £<br>2.500 Kg of Iron Ore<br>2.500 Kg of Lumber<br>2.500 L of Oil</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 8</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level IV<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>10.000 £<br>2.500 Kg of Iron Ore<br>2.500 Kg of Lumber<br>2.500 L of Oil</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 9</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Aerodrome<br>Level I<br></em></strong><img data-align="center" alt="" title="[Infrastructure] - [Aerodrome]" src="https://i.gyazo.com/3a64b0fba103fd83b6d81437b3d73ff9.png"></td>
+<td align="center"><strong><em>5.000 £<br>2.000 Kg of Lumber<br>2.000 M<sup>3</sup> of Gas</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>60 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 8</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Capital Building<br>Level I<br></em></strong><img data-align="center" alt="" title="[Infrastructure] - [Capital Building]" src="https://i.gyazo.com/101d5b8cb10836cf5044dce3632f157e.png"></td>
+<td align="center"><strong><em>2.000 £<br>5.000 Kg of Iron Ore<br>5.000 Kg of Lumber</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>40 Health Points</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notes"><strong><em>Notes:</em></strong></h5>
+<ol>
+<li><p><strong><em>Building Time</em></strong> in the previous table is accordingly to the <strong><em>Base</em></strong> time, as can be further explained in the following table.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Province Morale</em></strong></th>
+<th align="center"><strong><em>0%</em></strong></th>
+<th align="center"><strong><em>20%</em></strong></th>
+<th align="center"><strong><em>40%</em></strong></th>
+<th align="center"><strong><em>60%</em></strong></th>
+<th align="center"><strong><em>80%</em></strong></th>
+<th align="center"><strong><em>100%</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Building Speed</em></strong></td>
+<td align="center"><strong><em>20%</em></strong></td>
+<td align="center"><strong><em>40%</em></strong></td>
+<td align="center"><strong><em>60%</em></strong></td>
+<td align="center"><strong><em>80%</em></strong></td>
+<td align="center"><strong><em>100%</em></strong></td>
+<td align="center"><strong><em>110%</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Building Time</em></strong></td>
+<td align="center"><strong><em>Base (++++)</em></strong></td>
+<td align="center"><strong><em>Base (+++)</em></strong></td>
+<td align="center"><strong><em>Base (++)</em></strong></td>
+<td align="center"><strong><em>Base (+)</em></strong></td>
+<td align="center"><strong><em>Base</em></strong></td>
+<td align="center"><strong><em>Base (-)</em></strong></td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h5 class="atx" id="observations"><strong><em>Observations:</em></strong></h5>
+<ul>
+<li><strong><em>Infrastructures</em></strong> with a <strong><em>Building Level</em></strong> superior to 1, when destroyed, will revert back one level (but with the full <strong><em>Health Points</em></strong> of level they are now in), while <strong><em>Infrastructures</em></strong> with a <strong><em>Building Level</em></strong> of 1 will be completely erased. </li>
+<li>Disabling <strong><em>Infrastructures</em></strong> annuls any bonus they provide, alongside any production of <strong><em>Military Units</em></strong> (if they are being produced, it pauses the task), while erasing the need to pay the <strong><em>Upkeep</em></strong>.</li>
+</ul>
+<hr>
+<h3 class="atx" id="infrastructuresand39s-description-attributes-and-properties"><strong><em>Infrastructures's Description, Attributes and Properties</em></strong></h3>
+<h4 class="atx" id="recruitment-officelessbrgreaterlessimg-titledouble-quoteinfrastructure---recruitment-officedouble-quote-srcdouble-quotehttpsigyazocom600788dd1870fb29efe8fe42aa057b4dpngdouble-quote-altdouble-quotedouble-quote-data-aligndouble-quotecenterdouble-quotegreater"><strong><em>Recruitment Office</em></strong><br><img data-align="center" alt="" src="https://i.gyazo.com/600788dd1870fb29efe8fe42aa057b4d.png" title="[Infrastructure] - [Recruitment Office]"></h4>
+<h5 class="atx" id="description"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p><strong><em>The Recruiting Office is responsible for providing the constant enlistment and training of infantry units so the battle can continue. War propaganda does wonders to appeal to the masses.</em></strong></p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Recruitment Office<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/600788dd1870fb29efe8fe42aa057b4d.png" title="[Infrastructure] - [Recruitment Office]"></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations"><strong><em>Notes/Observations:</em></strong></h5>
+<ul>
+<li>Enables the recruitment of <strong><em>Infantry</em></strong> units.</li>
+<li>Automatically recruits <strong><em>Infantry</em></strong> units, without any interference from the <strong><em>Player</em></strong>.</li>
+<li>Can be deactivated, at any time, which immediately halts the recruitment of <strong><em>Infantry</em></strong> units, but annuls the payment of the <strong><em>Upkeep</em></strong> at the same time.</li>
+<li>One might consider disabling <strong><em>Recruitment Offices</em></strong> when the <strong><em>Province</em></strong> they are on is about to be captured, in the hopes that the new owner does not realise their current status, preventing them from keeping the recruitment of <strong><em>Infantry</em></strong> units.</li>
+<li>In the <strong><em>Late Game</em></strong>, if a <strong><em>Player</em></strong> is having problems with the production of <strong><em>Grain</em></strong> or <strong><em>Oil</em></strong>, it might be beneficial to halt the recruitment of <strong><em>Infantry</em></strong> units, through the disablement of the <strong><em>Recruitment Offices</em></strong>, but only as a last resource.  </li>
+</ul>
+<hr>
+<h4 class="atx" id="workshoplessbrgreater"><strong><em>Workshop</em></strong><br></h4>
+<img data-align="center" alt="" src="https://i.gyazo.com/9e14a8c7b5f741be52ca0bdfe6e905ee.png" title="[Infrastructure] - [Workshop]">
+
+<h5 class="atx" id="description-1"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>The <strong><em>Workshop</em></strong> enables the production of basic units like the <strong><em>Armored car</em></strong>. <strong><em>Level 2 Workshops</em></strong> can be further upgraded to Factories which enable even more powerful units to be produced.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-1"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Workshop<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/9e14a8c7b5f741be52ca0bdfe6e905ee.png" title="[Infrastructure] - [Workshop]"></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>50%</em></strong></td>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Workshop<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/9e14a8c7b5f741be52ca0bdfe6e905ee.png" title="[Infrastructure] - [Workshop]"></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>100%</em></strong></td>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-1"><strong><em>Notes/Observations:</em></strong></h5>
+<ul>
+<li>Enables the production of <strong><em>Armoured Car</em></strong> units at <strong><em>Level 1</em></strong> and <strong><em>Balloon</em></strong> units at <strong><em>Level 2</em></strong>.</li>
+<li>It is a necessary <strong><em>Building</em></strong> for the subsequent construction of <strong><em>Factories</em></strong>.</li>
+<li>It might suit oneself to construct <strong><em>Workshops</em></strong> where one is predicting erecting <strong><em>Factories</em></strong> later on, meaning, <strong><em>Double Resources Provinces</em></strong> and <strong><em>Single Resources Provinces</em></strong> that possess rarer <strong><em>Resources</em></strong> like <strong><em>Oil</em></strong>.</li>
+<li>Due to their low construction costs and short erecting time, <strong><em>Workshops</em></strong> can and should be build early on, even for the most frugal of <strong><em>Players</em></strong>.</li>
+</ul>
+<hr>
+<h4 class="atx" id="barrackslessbrgreaterlessimg-titledouble-quoteinfrastructure---barracksdouble-quote-srcdouble-quotehttpsigyazocomd2601ede220e033035a3cfc3e76a9cb0pngdouble-quote-altdouble-quotedouble-quote-data-aligndouble-quotecenterdouble-quotegreater"><strong><em>Barracks</em></strong><br><img data-align="center" alt="" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" title="[Infrastructure] - [Barracks]"></h4>
+<h5 class="atx" id="description-2"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>Required to train new units, like the Cavalry, the Barracks also improves infantry training speed. Maintaining some can be a bit costly but also necessary to the war effort. </p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-2"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Barracks<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" title="[Infrastructure] - [Barracks]"></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>50% faster Infantry Recruitment</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Barracks<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/d2601ede220e033035a3cfc3e76a9cb0.png" title="[Infrastructure] - [Barracks]"></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>150% faster Infantry Recruitment</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-2"><strong><em>Notes/Observations:</em></strong></h5>
+<ul>
+<li>Enables the production of <strong><em>Cavalry</em></strong> units at <strong><em>Level 1</em></strong>, with the caveat of having a <strong><em>Workshop</em></strong> built in the same <strong><em>Province</em></strong>.</li>
+<li>Every <strong><em>Province</em></strong> with <strong><em>Barracks</em></strong> built into, will have a bonus of <strong><em>Infantry</em></strong> recruitment, that increases alongside with that same <strong><em>Infrastructure's Level</em></strong>.</li>
+<li>It is advised that the <strong><em>Player</em></strong> construct this <strong><em>Infrastructures</em></strong> in <strong><em>Double Resource Provinces</em></strong> as to accentuate even more the bonus to recruitment of <strong><em>Infantry</em></strong> units (which is already enhanced in this type of <strong><em>Provinces</em></strong>), and also the fact that these will be the main local for construction of both <strong><em>Workshops</em></strong> (needed as well to produce <strong><em>Cavalry</em></strong> units) and <strong><em>Factories</em></strong> (which increase even more the production speed of the later units).</li>
+<li>Can be deactivated, at any time, which immediately halts the production of <strong><em>Cavalry</em></strong> units, removes the bonus to the recruitment of <strong><em>Infantry</em></strong> units, but annuls the payment of the <strong><em>Upkeep</em></strong> at the same time.</li>
+<li>While being an <strong><em>Infrastructure</em></strong> with a very demanding <strong><em>Upkeep</em></strong>, especially in the <strong><em>Early Game</em></strong>, it might be very suited to <strong><em>Nations</em></strong> that have in their core territory an ample abundance of <strong><em>Food Resource Provinces</em></strong>, and it is a must if those said <strong><em>Nations</em></strong> start with 2 <strong><em>Double Food Resource Provinces</em></strong>.</li>
+</ul>
+<hr>
+<h4 class="atx" id="fortresslessbrgreaterlessimg-titledouble-quoteinfrastructure---fortressdouble-quote-srcdouble-quotehttpsigyazocom1e52f8424f5bf9143e316e0a7ef8acb7pngdouble-quote-altdouble-quotedouble-quote-data-aligndouble-quotecenterdouble-quotegreater"><strong><em>Fortress</em></strong><br><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></h4>
+<h5 class="atx" id="description-3"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>Fortresses reduce incoming damage from attackers to all units stationed in the center of a province. The higher the Fortress level, the better its defense bonuses and morale bonus to the province. On higher levels they can conceal stationed armies.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-3"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Fortress<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>5%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>30% of Damage Mitigation</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>10%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>45% of Damage Mitigation</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level III<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>15%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>60% of Damage Mitigation<br>Concealment of Garrison</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level IV<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>20%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>75% of Damage Mitigation<br>Concealment of Garrison</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fortress<br>Level V<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/1e52f8424f5bf9143e316e0a7ef8acb7.png" title="[Infrastructure] - [Fortress]"></td>
+<td align="center"><strong><em>25%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>90% of Damage Mitigation<br>Concealment of Garrison</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-3"><strong><em>Notes/Observations:</em></strong></h5>
+<ul>
+<li><p>The main <strong><em>Infrastructure</em></strong> dedicated to the defence of <strong><em>Provinces</em></strong> and protection of their <strong><em>Garrisons</em></strong>, is one of the most, if not the most crucial <strong><em>Infrastructure</em></strong> to be erected during all of the <strong><em>Scenario's</em></strong> duration, especially in the <strong><em>Early Game</em></strong>, where it can mean the difference between survival or obliteration.</p>
+</li>
+<li><p>From <strong><em>Level 3</em></strong> onward, this <strong><em>Infrastructure</em></strong> awards the <strong><em>Stealth</em></strong> property to any <strong><em>Army/Squadron</em></strong> that resides in the center of the <strong><em>Province</em></strong> where it has been built, making those same units's composition invisible to any <strong><em>Neutral</em></strong> or <strong><em>Enemy</em></strong> <strong><em>Nation</em></strong>, although this situation can be circumvented with a reduced number of <strong><em>Actions</em></strong>. For more information on this subject, please read the <a href=""><strong><em>Stealth Units and How to Find Them</em></strong></a>.</p>
+</li>
+<li><p>In addition to the defence and <strong><em>Stealth</em></strong> capabilities supplied by <strong><em>Fortresses</em></strong>, these also give the <strong><em>Player</em></strong> a slight <strong><em>Province Morale</em></strong> bonus that, although not the highest amongst the <strong><em>Infrastructures</em></strong> at early <strong><em>Levels</em></strong>, comes cheaper than most, when it comes to both <strong><em>Building Cost</em></strong> and <strong><em>Building Time</em></strong>.</p>
+</li>
+</ul>
+<hr>
+<h4 class="atx" id="harbourlessbrgreaterlessimg-titledouble-quoteinfrastructure---harbourdouble-quote-srcdouble-quotehttpsigyazocome8a7e64fd879ebc35ec0bdf25c7023f1pngdouble-quote-altdouble-quotedouble-quote-data-aligndouble-quotecenterdouble-quotegreater"><strong><em>Harbour</em></strong><br><img data-align="center" alt="" src="https://i.gyazo.com/e8a7e64fd879ebc35ec0bdf25c7023f1.png" title="[Infrastructure] - [Harbour]"></h4>
+<h5 class="atx" id="description-4"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>Harbours allow the creation of naval units in provinces that have connections to the sea. They decrease embark and disembark times and help improve the province's resource production while allowing ships to quickly join the war.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-4"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Harbour<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/e8a7e64fd879ebc35ec0bdf25c7023f1.png" title="[Infrastructure] - [Harbour]"></td>
+<td align="center"><strong><em>10%</em></strong></td>
+<td align="center"><strong><em>25%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Light Cruiser<br>Submarine <br>Battleship</em></strong></td>
+<td align="center"><strong><em>50% decreased embarking and disembarking time</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-4"><strong><em>Notes/Observations:</em></strong></h5>
+<ol>
+<li>a</li>
+</ol>
+<hr>
+<h4 class="atx" id="railwaylessbrgreaterlessimg-titledouble-quoteinfrastructure---railwaydouble-quote-srcdouble-quotehttpsigyazocomaf6355ecea550bf83cb06c5070de3929pngdouble-quote-altdouble-quotedouble-quote-data-aligndouble-quotecenterdouble-quotegreater"><strong><em>Railway</em></strong><br><img data-align="center" alt="" src="https://i.gyazo.com/af6355ecea550bf83cb06c5070de3929.png" title="[Infrastructure] - [Railway]"></h4>
+<h5 class="atx" id="description-5"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>Increases the troop movement speed in the province, making armies more flexible. Railroads also allow the movement of Railroad guns and improve the resource production rate of the province.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-5"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Railway<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/af6355ecea550bf83cb06c5070de3929.png" title="[Infrastructure] - [Railway]"></td>
+<td align="center"><strong><em>15%</em></strong></td>
+<td align="center"><strong><em>33%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>150% increased Movement Speed for Units</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-5"><strong><em>Notes/Observations:</em></strong></h5>
+<ol>
+<li>a</li>
+</ol>
+<hr>
+<h4 class="atx" id="factorylessbrgreaterlessimg-titledouble-quoteinfrastructure---factorydouble-quote-srcdouble-quotehttpsigyazocomf1c2d07d0c237d0226ae379859571664pngdouble-quote-altdouble-quotedouble-quote-data-aligndouble-quotecenterdouble-quotegreater"><strong><em>Factory</em></strong><br><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></h4>
+<h5 class="atx" id="description-6"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>The Factories are the pinacle of industrial warfare. They enable the creation of ranged artillery, tanks, aircrafts and ships, everything needed to tip the war into one's favor. They also improve the resource production rate of a province.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-6"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Factory<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>4%</em></strong></td>
+<td align="center"><strong><em>8%</em></strong></td>
+<td align="center"><strong><em>100%</em></strong></td>
+<td align="center"><strong><em>Artillery<br>Light Cruiser</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level II<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>8%</em></strong></td>
+<td align="center"><strong><em>17%</em></strong></td>
+<td align="center"><strong><em>300%</em></strong></td>
+<td align="center"><strong><em>Tank<br>Submarine<br>Fighter</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level III<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>12%</em></strong></td>
+<td align="center"><strong><em>25%</em></strong></td>
+<td align="center"><strong><em>500%</em></strong></td>
+<td align="center"><strong><em>Railroad Gun<br>Heavy Tank<br>Battleship<br>Bomber</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Factory<br>Level IV<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/f1c2d07d0c237d0226ae379859571664.png" title="[Infrastructure] - [Factory]"></td>
+<td align="center"><strong><em>16%</em></strong></td>
+<td align="center"><strong><em>33%</em></strong></td>
+<td align="center"><strong><em>700%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-6"><strong><em>Notes/Observations:</em></strong></h5>
+<ol>
+<li>a</li>
+</ol>
+<hr>
+<h4 class="atx" id="aerodromelessbrgreater"><strong><em>Aerodrome</em></strong><br></h4>
+<img data-align="center" alt="" title="[Infrastructure] - [Aerodrome]" src="https://i.gyazo.com/3a64b0fba103fd83b6d81437b3d73ff9.png">
+
+<h5 class="atx" id="description-7"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>Aerodromes are needed to create and land airplanes, an invention that can reshape the war due to its great scouting and bombing capabilities. Well positioned Aerodromes allow planes to reach more areas and go deep into enemy territory.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-7"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Aerodrome<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/3a64b0fba103fd83b6d81437b3d73ff9.png" title="[Infrastructure] - [Aerodrome]"></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Fighter<br>Bomber</em></strong></td>
+<td align="center"><strong><em>Enables Aerial Military Units to perform Actions</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-7"><strong><em>Notes/Observations:</em></strong></h5>
+<ol>
+<li>a</li>
+</ol>
+<hr>
+<h4 class="atx" id="capital-buildinglessbrgreater"><strong><em>Capital Building</em></strong><br></h4>
+<img data-align="center" alt="" src="https://i.gyazo.com/101d5b8cb10836cf5044dce3632f157e.png" title="[Infrastructure] - [Capital Building]">
+
+<h5 class="atx" id="description-8"><strong><em>Description:</em></strong></h5>
+<blockquote>
+<p>The center of a country's power, the capital is necessary to maintain morale in all provinces. The farther a province is to a capital, the higher the penalty to its morale. Keep them safe, as losing a capital results in morale and resource penalties.</p>
+</blockquote>
+<h5 class="atx" id="attributes-and-properties-8"><strong><em>Attributes and Properties:</em></strong></h5>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Infrastructure</em></strong></th>
+<th align="center"><strong><em>Morale Development</em></strong></th>
+<th align="center"><strong><em>Resources Production Bonus</em></strong></th>
+<th align="center"><strong><em>Units Production Speed Bonus</em></strong></th>
+<th align="center"><strong><em>Unlockable Military Units</em></strong></th>
+<th align="center"><strong><em>Special Bonus</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Capital Building<br>Level I<br></em></strong><img data-align="center" alt="" src="https://i.gyazo.com/101d5b8cb10836cf5044dce3632f157e.png" title="[Infrastructure] - [Capital Building]"></td>
+<td align="center"><strong><em>10%</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>Allows the Player to perform Market Actions</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-8"><strong><em>Notes/Observations:</em></strong></h5>
+<ul>
+<li><p>The most important <strong><em>Infrastructure</em></strong> in the <strong><em>Player's</em></strong> possession, and at the loss of same, the <strong><em>Player</em></strong> incurs in the decrease of <strong><em>Province Morale</em></strong> by <strong><em>20 Points</em></strong> with a constant penalty of <strong><em>40 Points</em></strong> until the construction of a new one, while losing <strong><em>50%</em></strong> of his own <strong><em>Sterlings</em></strong> to the aggressor as well.</p>
+</li>
+<li><p>In the same note, but on the opposite side of the coin, the destruction of an enemy <strong><em>Capital Building</em></strong> will afford the victor <strong><em>10 Points</em></strong> of <strong><em>Morale</em></strong> in all of his <strong><em>Provinces</em></strong> (with the exception of the enemy <strong><em>Capital Province</em></strong> just acquired), allied with the gain a whole day's worth of <strong><em>Resources</em></strong> (based on <strong><em>Resource Production</em></strong> of the defeated) and <strong><em>50%</em></strong> of the defeated's <strong><em>Sterlings</em></strong>.</p>
+</li>
+</ul>
+<hr>
+<hr>
+<h2 class="atx" id="military-units"><strong><em>Military Units</em></strong></h2>
+<h3 class="atx" id="military-unitsand39s-production-statistics"><strong><em>Military Units's Production Statistics</em></strong></h3>
+<h4 class="atx" id="table-of-military-unitsand39s-production-statistics"><strong><em>Table of Military Units's Production Statistics</em></strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Military Unit</em></strong></th>
+<th align="center"><strong><em>Production Cost</em></strong></th>
+<th align="center"><strong><em>Production Time</em></strong></th>
+<th align="center"><strong><em>Daily Upkeep</em></strong></th>
+<th align="center"><strong><em>Infrastructural Requirements</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>24 Hours (Single Resource Provinces)<br>12 Hours (Double&nbsp;Resource Provinces)</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Recruitment Office</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>6.000 £<br>1.200 Kg of Grain<br>1.200 Kg of Fish</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>20&nbsp;Kg of Grain<br>10&nbsp;Kg of Fish</em></strong></td>
+<td align="center"><strong><em>Workshop - I<br>Barracks - I</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>8.500 £<br>2.000 Kg of Iron Ore<br>1.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Workshop - I</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Tank</em></strong></td>
+<td align="center"><strong><em>20.000 £<br>5.000 Kg of Iron Ore<br>3.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Factory - II</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Heavy Tank</em></strong></td>
+<td align="center"><strong><em>30.000 £<br>7.000 Kg of Iron Ore<br>4.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Factory - III</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Storm Trooper</em></strong></td>
+<td align="center"><strong><em>Unit Card</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Artillery</em></strong></td>
+<td align="center"><strong><em>10.000 £<br>3.000 Kg of Iron Ore<br>2.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Factory - I</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>50.000 £<br>10.000 Kg of Iron Ore<br>5.000 Kg of Lumber<br>5.000 Kg of Coal<br>10.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Railway - I<br>Factory - III</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Light Cruiser</em></strong></td>
+<td align="center"><strong><em>15.000 £<br>3.000 Kg of Iron Ore<br>2.000 Kg of Coal<br>2.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Harbour - I<br>Factory - I</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Submarine</em></strong></td>
+<td align="center"><strong><em>20.000 £<br>3.000 Kg of Iron Ore<br>2.000 Kg of Lumber<br>3.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Harbour - I<br>Factory - II</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Battleship</em></strong></td>
+<td align="center"><strong><em>50.000£<br>15.000 Kg of Iron Ore<br>5.000 Kg of Lumber<br>10.000 Kg of Coal<br>5.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Harbour - I<br>Factory - III</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>5.000 £<br>1.000 Kg of Lumber<br>1.000 M<sup>3</sup> of Gas</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 M<sup>3</sup> of Gas</em></strong></td>
+<td align="center"><strong><em>Workshop - II</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fighter</em></strong></td>
+<td align="center"><strong><em>20.000 £<br>2.500 Kg of Iron Ore<br>5.000 Kg of Lumber<br>5.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Aerodrome - I<br>Factory - II</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Bomber</em></strong></td>
+<td align="center"><strong><em>50.000 £<br>5.000 Kg of Iron Ore<br>7.500 Kg of Lumber<br>10.000 L of Oil</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>20 Kg of Grain<br>5 L of Oil</em></strong></td>
+<td align="center"><strong><em>Aerodrome - I<br>Factory - III</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Zeppelin</em></strong></td>
+<td align="center"><strong><em>Unit Card</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+</tbody></table>
+<br>
+
+<hr>
+<h3 class="atx" id="military-unitsand39s-combat-statistics"><strong><em>Military Units's Combat Statistics</em></strong></h3>
+<h4 class="atx" id="table-of-military-unitsand39s-offensive-statistics"><strong><em>Table of Military Units's Offensive Statistics</em></strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Military Unit</em></strong></th>
+<th align="center"><strong><em>Damage vs Terrestrial Targets</em></strong></th>
+<th align="center"><strong><em>Damage vs Aerial Targets</em></strong></th>
+<th align="center"><strong><em>Damage vs Naval Targets</em></strong></th>
+<th align="center"><strong><em>Damage vs Infrastructures</em></strong></th>
+<th align="center"><strong><em>Damage vs Province Morale</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>4.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.5 in Offence</em></strong></td>
+<td align="center"><strong><em>2.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.3 in Offence</em></strong></td>
+<td align="center"><strong><em>0.1 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>15.0 in Offence</em></strong></td>
+<td align="center"><strong><em>2.0 in Offence</em></strong></td>
+<td align="center"><strong><em>8.0 in Offence</em></strong></td>
+<td align="center"><strong><em>2.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.6 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>6.0 in Offence</em></strong></td>
+<td align="center"><strong><em>4.0 in Offence</em></strong></td>
+<td align="center"><strong><em>3.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.2 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Tank</em></strong></td>
+<td align="center"><strong><em>30.0 in Offence</em></strong></td>
+<td align="center"><strong><em>3.0 in Offence</em></strong></td>
+<td align="center"><strong><em>15.0 in Offence</em></strong></td>
+<td align="center"><strong><em>6.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.2 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Heavy Tank</em></strong></td>
+<td align="center"><strong><em>45.0 in Offence</em></strong></td>
+<td align="center"><strong><em>4.0 in Offence</em></strong></td>
+<td align="center"><strong><em>23.0 in Offence</em></strong></td>
+<td align="center"><strong><em>9.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.8 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Storm Trooper</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Artillery</em></strong></td>
+<td align="center"><strong><em>8.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.0 in Offence</em></strong></td>
+<td align="center"><strong><em>8.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.5 in Offence</em></strong></td>
+<td align="center"><strong><em>0.3 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>20.0 in Offence</em></strong></td>
+<td align="center"><strong><em>2.0 in Offence</em></strong></td>
+<td align="center"><strong><em>20.0 in Offence</em></strong></td>
+<td align="center"><strong><em>4.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.8 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Light Cruiser</em></strong></td>
+<td align="center"><strong><em>10.0 in Offence</em></strong></td>
+<td align="center"><strong><em>10.0 in Offence</em></strong></td>
+<td align="center"><strong><em>10.0 in Offence</em></strong></td>
+<td align="center"><strong><em>2.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.4 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Submarine</em></strong></td>
+<td align="center"><strong><em>2.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.0 in Offence</em></strong></td>
+<td align="center"><strong><em>40.0 in Offence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Battleship</em></strong></td>
+<td align="center"><strong><em>40.0 in Offence</em></strong></td>
+<td align="center"><strong><em>6.0 in Offence</em></strong></td>
+<td align="center"><strong><em>40.0 in Offence</em></strong></td>
+<td align="center"><strong><em>8.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.6 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>3.0 in Offence</em></strong></td>
+<td align="center"><strong><em>8.0 in Offence</em></strong></td>
+<td align="center"><strong><em>3.0 in Offence</em></strong></td>
+<td align="center"><strong><em>0.5 in Offence</em></strong></td>
+<td align="center"><strong><em>0.1 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fighter</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+<td align="center"><strong><em>?????????</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Bomber</em></strong></td>
+<td align="center"><strong><em>30.0 in Offence</em></strong></td>
+<td align="center"><strong><em>3.0 in Offence</em></strong></td>
+<td align="center"><strong><em>30.0 in Offence</em></strong></td>
+<td align="center"><strong><em>6.0 in Offence</em></strong></td>
+<td align="center"><strong><em>1.2 in Offence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Zeppelin</em></strong></td>
+<td align="center"><strong><em>5.0 in Offence</em></strong></td>
+<td align="center"><strong><em>5.0 in Offence</em></strong></td>
+<td align="center"><strong><em>5.0 in Offence</em></strong></td>
+<td align="center"><strong><em>30.0 in Offence</em></strong></td>
+<td align="center"><strong><em>6.0 in Offence</em></strong></td>
+</tr>
+</tbody></table>
+<br>
+
+<h4 class="atx" id="table-of-military-unitsand39s-defensive-statistics"><strong><em>Table of Military Units's Defensive Statistics</em></strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Military Unit</em></strong></th>
+<th align="center"><strong><em>Damage vs Terrestrial Targets</em></strong></th>
+<th align="center"><strong><em>Damage vs Aerial Targets</em></strong></th>
+<th align="center"><strong><em>Damage vs Naval Targets</em></strong></th>
+<th align="center"><strong><em>Damage vs Infrastructures</em></strong></th>
+<th align="center"><strong><em>Damage vs Province Morale</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>5.0 in Defence</em></strong></td>
+<td align="center"><strong><em>0.6 in Defence</em></strong></td>
+<td align="center"><strong><em>2.5 in Defence</em></strong></td>
+<td align="center"><strong><em>0.4 in Defence</em></strong></td>
+<td align="center"><strong><em>0.1 in Defence</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>7.5 in Defence</em></strong></td>
+<td align="center"><strong><em>1.0 in Defence</em></strong></td>
+<td align="center"><strong><em>4.0 in Defence</em></strong></td>
+<td align="center"><strong><em>1.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>12.0 in Defence</em></strong></td>
+<td align="center"><strong><em>8.0 in Defence</em></strong></td>
+<td align="center"><strong><em>6.0 in Defence</em></strong></td>
+<td align="center"><strong><em>2.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Tank</em></strong></td>
+<td align="center"><strong><em>30.0 in Defence</em></strong></td>
+<td align="center"><strong><em>3.0 in Defence</em></strong></td>
+<td align="center"><strong><em>15.0 in Defence</em></strong></td>
+<td align="center"><strong><em>6.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Heavy Tank</em></strong></td>
+<td align="center"><strong><em>45.0 in Defence</em></strong></td>
+<td align="center"><strong><em>4.0 in Defence</em></strong></td>
+<td align="center"><strong><em>23.0 in Defence</em></strong></td>
+<td align="center"><strong><em>9.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Storm Trooper</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Artillery</em></strong></td>
+<td align="center"><strong><em>2.7 in Defence</em></strong></td>
+<td align="center"><strong><em>0.3 in Defence</em></strong></td>
+<td align="center"><strong><em>2.7 in Defence</em></strong></td>
+<td align="center"><strong><em>0.5 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>6.7 in Defence</em></strong></td>
+<td align="center"><strong><em>0.7 in Defence</em></strong></td>
+<td align="center"><strong><em>6.7 in Defence</em></strong></td>
+<td align="center"><strong><em>1.3 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Light Cruiser</em></strong></td>
+<td align="center"><strong><em>10.0 in Defence</em></strong></td>
+<td align="center"><strong><em>10.0 in Defence</em></strong></td>
+<td align="center"><strong><em>10.0 in Defence</em></strong></td>
+<td align="center"><strong><em>2.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Submarine</em></strong></td>
+<td align="center"><strong><em>2.0 in Defence</em></strong></td>
+<td align="center"><strong><em>1.0 in Defence</em></strong></td>
+<td align="center"><strong><em>40.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Battleship</em></strong></td>
+<td align="center"><strong><em>40.0 in Defence</em></strong></td>
+<td align="center"><strong><em>6.0 in Defence</em></strong></td>
+<td align="center"><strong><em>40.0 in Defence</em></strong></td>
+<td align="center"><strong><em>8.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>3.0 in Defence</em></strong></td>
+<td align="center"><strong><em>8.0 in Defence</em></strong></td>
+<td align="center"><strong><em>3.0 in Defence</em></strong></td>
+<td align="center"><strong><em>0.5 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fighter</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Bomber</em></strong></td>
+<td align="center"><strong><em>30.0 in Defence</em></strong></td>
+<td align="center"><strong><em>3.0 in Defence</em></strong></td>
+<td align="center"><strong><em>30.0 in Defence</em></strong></td>
+<td align="center"><strong><em>6.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Zeppelin</em></strong></td>
+<td align="center"><strong><em>5.0 in Defence</em></strong></td>
+<td align="center"><strong><em>5.0 in Defence</em></strong></td>
+<td align="center"><strong><em>5.0 in Defence</em></strong></td>
+<td align="center"><strong><em>30.0 in Defence</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+</tbody></table>
+<br>
+
+<hr>
+<h3 class="atx" id="military-unitsand39s-movement-statistics"><strong><em>Military Units's Movement Statistics</em></strong></h3>
+<h4 class="atx" id="table-of-military-unitsand39s-movement"><strong><em>Table of Military Units's Movement</em></strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Military Unit</em></strong></th>
+<th align="center"><strong><em>Movement Speed on Land (Roads)</em></strong></th>
+<th align="center"><strong><em>Movement Speed on Land (Railways)</em></strong></th>
+<th align="center"><strong><em>Movement Speed on Water</em></strong></th>
+<th align="center"><strong><em>Movement Speed on Air</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>36 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>48 Km/H</em></strong></td>
+<td align="center"><strong><em>90 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>72 Km/H</em></strong></td>
+<td align="center"><strong><em>90 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Tank</em></strong></td>
+<td align="center"><strong><em>42 Km/H</em></strong></td>
+<td align="center"><strong><em>90 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Heavy Tank</em></strong></td>
+<td align="center"><strong><em>30 Km/H</em></strong></td>
+<td align="center"><strong><em>90 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Storm Trooper</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Artillery</em></strong></td>
+<td align="center"><strong><em>25 Km/H</em></strong></td>
+<td align="center"><strong><em>63 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>13 Km/H</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Light Cruiser</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>67 Km/H</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Submarine</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>30 Km/H</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Battleship</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+<td align="center"><strong><em>30 Km/H</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>25 Km/H</em></strong></td>
+<td align="center"><strong><em>90 Km/H</em></strong></td>
+<td align="center"><strong><em>25 Km/H</em></strong></td>
+<td align="center"><strong><em>X</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fighter</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Bomber</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>144 Km/H</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Zeppelin</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>84 Km/H</em></strong></td>
+</tr>
+</tbody></table>
+<br>
+
+<hr>
+<h3 class="atx" id="military-unitsand39s-healthmorale-and-ranges-statistics"><strong><em>Military Units's Health/Morale and Ranges Statistics</em></strong></h3>
+<h4 class="atx" id="table-of-military-unitsand39s-health-points-morale-attack-range-and-view-range-statistics"><strong><em>Table of Military Units's Health Points/ Morale, Attack Range and View Range Statistics</em></strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Military Unit</em></strong></th>
+<th align="center"><strong><em>Health / Morale</em></strong></th>
+<th align="center"><strong><em>Attack Range</em></strong></th>
+<th align="center"><strong><em>View Range (Detailed / Visible)</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>20&nbsp;Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>25&nbsp;Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>60 Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Tank</em></strong></td>
+<td align="center"><strong><em>175 Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Heavy Tank</em></strong></td>
+<td align="center"><strong><em>260 Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Storm Trooper</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Artillery</em></strong></td>
+<td align="center"><strong><em>20&nbsp;Health / Morale</em></strong></td>
+<td align="center"><strong><em>50 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>60 Health / Morale</em></strong></td>
+<td align="center"><strong><em>150 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Light Cruiser</em></strong></td>
+<td align="center"><strong><em>50 Health / Morale</em></strong></td>
+<td align="center"><strong><em>40 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Submarine</em></strong></td>
+<td align="center"><strong><em>100 Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Battleship</em></strong></td>
+<td align="center"><strong><em>200 Health / Morale</em></strong></td>
+<td align="center"><strong><em>75 Km</em></strong></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>20&nbsp;Health / Morale</em></strong></td>
+<td align="center"><strong><em>0 Km</em></strong></td>
+<td align="center"><strong><em>180 Km / 360&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fighter</em></strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong><em>90 Km / 180&nbsp;Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Bomber</em></strong></td>
+<td align="center"><strong><em>80&nbsp;Health / Morale</em></strong></td>
+<td align="center"><strong><em>350 Km</em></strong></td>
+<td align="center"><strong><em>24 Km / 48 Km</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Zeppelin</em></strong></td>
+<td align="center"><strong><em>160 Health / Morale</em></strong></td>
+<td align="center"><strong><em>750 Km</em></strong></td>
+<td align="center"><strong><em>24 Km / 48 Km</em></strong></td>
+</tr>
+</tbody></table>
+<br>
+
+<hr>
+<h3 class="atx" id="military-unitsand39s-description-attributes-and-properties"><strong><em>Military Units's Description, Attributes and Properties</em></strong></h3>
+<h4 class="atx" id="terrestrial-military-complex-units"><strong><em>Terrestrial Military Complex Units</em></strong></h4>
+<h5 class="atx" id="unmechanized-melee-units"><strong><em>Unmechanized Melee Units</em></strong></h5>
+<h6 class="atx" id="infantry"><strong><em>Infantry</em></strong></h6>
+<p><img title="[Infantry] - [Unit]" alt="" src="https://i.gyazo.com/c3ecbe1fd2b0647ddb7e85e341bdd652.png"></p>
+<h6 class="atx" id="cavalry"><strong><em>Cavalry</em></strong></h6>
+<h6 class="atx" id="storm-trooper"><strong><em>Storm Trooper</em></strong></h6>
+<h5 class="atx" id="mechanized-melee-units"><strong><em>Mechanized Melee Units</em></strong></h5>
+<h6 class="atx" id="armoured-car"><strong><em>Armoured Car</em></strong></h6>
+<h6 class="atx" id="tank"><strong><em>Tank</em></strong></h6>
+<h6 class="atx" id="heavy-tank"><strong><em>Heavy Tank</em></strong></h6>
+<h5 class="atx" id="mechanized-ranged-units"><strong><em>Mechanized Ranged Units</em></strong></h5>
+<h6 class="atx" id="artillery"><strong><em>Artillery</em></strong></h6>
+<h6 class="atx" id="railroad-gun"><strong><em>Railroad Gun</em></strong></h6>
+<h4 class="atx" id="naval-military-complex-units"><strong><em>Naval Military Complex Units</em></strong></h4>
+<h5 class="atx" id="mechanized-melee-units-1"><strong><em>Mechanized Melee Units</em></strong></h5>
+<h6 class="atx" id="submarine"><strong><em>Submarine</em></strong></h6>
+<h5 class="atx" id="mechanized-ranged-units-1"><strong><em>Mechanized Ranged Units</em></strong></h5>
+<h6 class="atx" id="light-cruiser"><strong><em>Light Cruiser</em></strong></h6>
+<h6 class="atx" id="battleship"><strong><em>Battleship</em></strong></h6>
+<h4 class="atx" id="aerial-military-complex-units"><strong><em>Aerial Military Complex Units</em></strong></h4>
+<h5 class="atx" id="mechanized-melee-units-2"><strong><em>Mechanized Melee Units</em></strong></h5>
+<h6 class="atx" id="balloon"><strong><em>Balloon</em></strong></h6>
+<h5 class="atx" id="mechanized-ranged-units-2"><strong><em>Mechanized Ranged Units</em></strong></h5>
+<h6 class="atx" id="fighter"><strong><em>Fighter</em></strong></h6>
+<h6 class="atx" id="bomber"><strong><em>Bomber</em></strong></h6>
+<h6 class="atx" id="zeppelin"><strong><em>Zeppelin</em></strong></h6>
+<h6 class="atx" id="description-9"><strong><em>Description:</em></strong></h6>
+<hr>
+<hr>
+<h2 class="atx" id="cards-boosters-speedups-and-medals"><strong><em>Cards, Boosters, Speedups and Medals</em></strong></h2>
+<h3 class="atx" id="cards"><strong><em>Cards</em></strong></h3>
+<h4 class="atx" id="table-of-resources-cardsand39s-statistics"><strong><em>Table of Resources Cards's Statistics</em></strong></h4>
+<p><strong><em>Resources Cards</em></strong> are <strong><em>Cards</em></strong> that give the player a finite amount of <strong><em>Resources</em></strong> with immediate effect.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Resource</em></strong></th>
+<th align="center"><strong><em>Small</em></strong></th>
+<th align="center"><strong><em>Medium</em></strong></th>
+<th align="center"><strong><em>Large</em></strong></th>
+<th align="center"><strong><em>Extra Large</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Grain</em></strong></td>
+<td align="center"><strong><em>100 Kg</em></strong></td>
+<td align="center"><strong><em>1.250 Kg</em></strong></td>
+<td align="center"><strong><em>5.000 Kg</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fish</em></strong></td>
+<td align="center"><strong><em>100 Kg</em></strong></td>
+<td align="center"><strong><em>1.250 Kg</em></strong></td>
+<td align="center"><strong><em>5.000 Kg</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Lumber</em></strong></td>
+<td align="center"><strong><em>100&nbsp;Kg</em></strong></td>
+<td align="center"><strong><em>1.250 Kg</em></strong></td>
+<td align="center"><strong><em>5.000 Kg</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Iron Ore</em></strong></td>
+<td align="center"><strong><em>100&nbsp;Kg</em></strong></td>
+<td align="center"><strong><em>1.250 Kg</em></strong></td>
+<td align="center"><strong><em>5.000 Kg</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Coal</em></strong></td>
+<td align="center"><strong><em>100&nbsp;Kg</em></strong></td>
+<td align="center"><strong><em>1.250 Kg</em></strong></td>
+<td align="center"><strong><em>5.000 Kg</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Oil</em></strong></td>
+<td align="center"><strong><em>100 L</em></strong></td>
+<td align="center"><strong><em>1.250&nbsp;L</em></strong></td>
+<td align="center"><strong><em>5.000&nbsp;L</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Gas</em></strong></td>
+<td align="center"><strong><em>100&nbsp;M<sup>3</sup></em></strong></td>
+<td align="center"><strong><em>1.250&nbsp;M<sup>3</sup></em></strong></td>
+<td align="center"><strong><em>5.000&nbsp;M<sup>3</sup></em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Sterlings</em></strong></td>
+<td align="center"><strong><em>100 £</em></strong></td>
+<td align="center"><strong><em>1.250 £</em></strong></td>
+<td align="center"><strong><em>5.000 £</em></strong></td>
+<td align="center"><strong><em>12.500 £</em></strong></td>
+</tr>
+</tbody></table>
+<h4 class="atx" id="table-of-units-cardsand39s-statistics"><strong><em>Table of Units Cards's Statistics</em></strong></h4>
+<p><strong><em>Units Cards</em></strong> are <strong><em>Cards</em></strong> that give the player a timed deployable <strong><em>Military Unit</em></strong>, assuming that all the criteria has been met.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Military Unit</em></strong></th>
+<th align="center"><strong><em>Availability Day</em></strong></th>
+<th align="center"><strong><em>Deployment Time</em></strong></th>
+<th align="center"><strong><em>Morale Threshold</em></strong></th>
+<th align="center"><strong><em>Rarity</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Infantry</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+<td align="center"><strong><em>12 Hours</em></strong></td>
+<td align="center"><strong><em>10% Province Morale</em></strong></td>
+<td align="center"><strong><em>Common</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Cavalry</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>50% Province Morale</em></strong></td>
+<td align="center"><strong><em>Uncommon</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Armoured Car</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>30% Province Morale</em></strong></td>
+<td align="center"><strong><em>Uncommon</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Tank</em></strong></td>
+<td align="center"><strong><em>Day 10</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>50% Province Morale</em></strong></td>
+<td align="center"><strong><em>Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Heavy Tank</em></strong></td>
+<td align="center"><strong><em>Day 12</em></strong></td>
+<td align="center"><strong><em>64 Hours</em></strong></td>
+<td align="center"><strong><em>70% Province Morale</em></strong></td>
+<td align="center"><strong><em>Very Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Storm Trooper</em></strong></td>
+<td align="center"><strong><em>Day 4</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>50% Province Morale</em></strong></td>
+<td align="center"><strong><em>Very Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Artillery</em></strong></td>
+<td align="center"><strong><em>Day 8</em></strong></td>
+<td align="center"><strong><em>32 Hours</em></strong></td>
+<td align="center"><strong><em>70% Province Morale</em></strong></td>
+<td align="center"><strong><em>Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Railroad Gun</em></strong></td>
+<td align="center"><strong><em>Day 12</em></strong></td>
+<td align="center"><strong><em>115 Hours</em></strong></td>
+<td align="center"><strong><em>100% Province Morale</em></strong></td>
+<td align="center"><strong><em>Very Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Balloon</em></strong></td>
+<td align="center"><strong><em>Day 1</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>30% Province Morale</em></strong></td>
+<td align="center"><strong><em>Uncommon</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Fighter</em></strong></td>
+<td align="center"><strong><em>Day 10</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+<td align="center"><strong><em>70% Province Morale</em></strong></td>
+<td align="center"><strong><em>Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Bomber</em></strong></td>
+<td align="center"><strong><em>Day 12</em></strong></td>
+<td align="center"><strong><em>80 Hours</em></strong></td>
+<td align="center"><strong><em>70% Province Morale</em></strong></td>
+<td align="center"><strong><em>Very Rare</em></strong></td>
+</tr>
+<tr>
+<td align="center"><strong><em>Zeppelin</em></strong></td>
+<td align="center"><strong><em>Day 10</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>70% Province Morale</em></strong></td>
+<td align="center"><strong><em>Very Rare</em></strong></td>
+</tr>
+</tbody></table>
+<h5 class="atx" id="notesobservations-9"><strong><em>Notes/Observations:</em></strong></h5>
+<p>The <strong><em>Deployment Time</em></strong> values are set for <strong><em>Classic Scenario Speed (x1)</em></strong> and will change depending on the <strong><em>Scenario's</em></strong> configurations. To access the other values, please check the <strong><em>Scenarios and Round Types</em></strong> section.</p>
+<hr>
+<h3 class="atx" id="boosters-and-speedups"><strong><em>Boosters and Speedups</em></strong></h3>
+<h4 class="atx" id="boosters"><strong><em>Boosters</em></strong></h4>
+<ol>
+<li><h5 class="atx" id="table-of-hitpoints-boostersand39s-statistics"><strong><em>Table of Hitpoints Boosters's Statistics</em></strong></h5>
+<p><strong><em>Hitpoints Boosters</em></strong> are <strong><em>Boosters</em></strong> that increase the <strong><em>Hitpoints</em></strong> of a designated <strong><em>Military Unit</em></strong>. In the case of activation on a <strong><em>Army/Fleet/Squadron</em></strong> the <strong><em>Hitpoints</em></strong> will be divided equally between all <strong><em>Military Units</em></strong> of that group. If the desire is to specifically target one of those, then the one in question needs to be separated from the <strong><em>Army/Fleet/Squadron</em></strong>, applied the <strong><em>Booster</em></strong> and then reattach it back into the group. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Booster</em></strong></th>
+<th align="center"><strong><em>Small</em></strong></th>
+<th align="center"><strong><em>Medium</em></strong></th>
+<th align="center"><strong><em>Large</em></strong></th>
+<th align="center"><strong><em>Extra Large</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Hitpoints</em></strong></td>
+<td align="center"><strong><em>1 Hitpoints</em></strong></td>
+<td align="center"><strong><em>15 Hitpoints</em></strong></td>
+<td align="center"><strong><em>50 Hitpoints</em></strong></td>
+<td align="center"><strong><em>150 Hitpoints</em></strong></td>
+</tr>
+</tbody></table>
+</li>
+<li><h5 class="atx" id="table-of-province-morale-boostersand39s-statistics"><strong><em>Table of Province Morale Boosters's Statistics</em></strong></h5>
+<p><strong><em>Province Morale Boosters</em></strong> are <strong><em>Boosters</em></strong> that increase the <strong><em>Morale</em></strong> of a designated <strong><em>Province</em></strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Booster</em></strong></th>
+<th align="center"><strong><em>Small</em></strong></th>
+<th align="center"><strong><em>Medium</em></strong></th>
+<th align="center"><strong><em>Large</em></strong></th>
+<th align="center"><strong><em>Extra Large</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Province Morale</em></strong></td>
+<td align="center"><strong><em>1% Morale</em></strong></td>
+<td align="center"><strong><em>10% Morale</em></strong></td>
+<td align="center"><strong><em>35% Morale</em></strong></td>
+<td align="center"><strong><em>?</em></strong></td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h4 class="atx" id="speedups"><strong><em>Speedups</em></strong></h4>
+<ol>
+<li><h5 class="atx" id="table-of-construction-speedupsand39s-statistics"><strong><em>Table of Construction Speedups's Statistics</em></strong></h5>
+<p><strong><em>Construction Speedups</em></strong> are <strong><em>Speedups</em></strong> that diminish the remaining construction time of the <strong><em>Infrastructure</em></strong> that is being built on a singular <strong><em>Province</em></strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Speedup</em></strong></th>
+<th align="center"><strong><em>Small</em></strong></th>
+<th align="center"><strong><em>Medium</em></strong></th>
+<th align="center"><strong><em>Large</em></strong></th>
+<th align="center"><strong><em>Extra Large</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Construction</em></strong></td>
+<td align="center"><strong><em>30 Minutes</em></strong></td>
+<td align="center"><strong><em>6 Hours</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+</tr>
+</tbody></table>
+</li>
+<li><h5 class="atx" id="table-of-production-speedupsand39s-statistics"><strong><em>Table of Production Speedups's Statistics</em></strong></h5>
+<p><strong><em>Production Speedups</em></strong> are <strong><em>Speedups</em></strong> that diminish the remaining production time of the <strong><em>Military Unit</em></strong> that is being produced/recruited on a singular <strong><em>Province</em></strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>Speedup</em></strong></th>
+<th align="center"><strong><em>Small</em></strong></th>
+<th align="center"><strong><em>Medium</em></strong></th>
+<th align="center"><strong><em>Large</em></strong></th>
+<th align="center"><strong><em>Extra Large</em></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>Production</em></strong></td>
+<td align="center"><strong><em>30 Minutes</em></strong></td>
+<td align="center"><strong><em>6 Hours</em></strong></td>
+<td align="center"><strong><em>24 Hours</em></strong></td>
+<td align="center"><strong><em>48 Hours</em></strong></td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h5 class="atx" id="notesobservations-10"><strong><em>Notes/Observations:</em></strong></h5>
+<p>This values are set for <strong><em>Classic Scenario Speed (x1)</em></strong> and will change depending on the <strong><em>Scenario's</em></strong> configurations. To access the other values, please check the <a href=""><strong><em>Scenarios and Round Types</em></strong></a> section.</p>
+<hr>
+<h3 class="atx" id="hero-medals"><strong><em>Hero Medals</em></strong></h3>
+<p><img title="[Heroe's Medals]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/3c1470b719a0f28984da84294f4c4a60e0d04d31.jpg"></p>
+<hr>
+<hr>
+<h2 class="atx" id="scenarios-and-round-types"><strong><em>Scenarios and Round Types</em></strong></h2>
+<p><img title="Gold Rush Event" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/75dd39c15d8bb671c1a68d0d24ec93708ec0b3d0.jpg"></p>
+<p><img alt="" src="https://clan.fastly.steamstatic.com/images//34123292/1c9e2e81c770f5d2bc17ca8d079ecb44cd923f35.jpg"></p>
+<p><img title="Free For All Event" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/53b4740cac8e62554cf3b7c1802aa0493f34065a.jpg"></p>
+<p><img title="Rush for Europe Event" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/8941d9e9f66b2c880fe856f527fe5483367f4fb9.jpg"></p>
+<p><img title="[Arms Race] - [Event]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/933f8f13495c6e8647445fa8ccc4811322549631.jpg"></p>
+<p><img title="[Swift Strike] - [Event]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/cac9a3c2071462b8715d6d6bcb28f6f217f8b9bd.jpg"></p>
+<p><img title="Capital Rush Event" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/59f96f78375336c256ce91c877d6fecfd8d42c59.jpg"></p>
+<p><img title="[Team Up] - [Event]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/5b5e90b2505e87a1cfec1a1c6107396b775b8d27.jpg"></p>
+<p><img title="Speed Round Event" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/e271412f89bf05198adac4a0faec85a5c34b9d1e.jpg"></p>
+<p><img title="All Countries All In Event" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/dc4b4910b2313a8c3027ab3a9d57df79cb268155.jpg"></p>
+<p><img title="[Colonia Uprising] - [Event]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/dde0537ff4059c1e1792bec2d49fcc4df72ad8b8.jpg"></p>
+<p><img title="[Mesopotamian Blitzkrieg] - [Event]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/e36d6b1a07ba4b510d288301fb60657e8bd87b9a.jpg"></p>
+<hr>
+<hr>
+<h2 class="atx" id="victory-conditions-and-how-to-achieve-them"><strong><em>Victory Conditions and How to Achieve Them</em></strong></h2>
+<hr>
+<hr>
+
+
+<img data-align="center" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/a35904b8ad0178e95df58feff21f1ffa7dd29728.jpg" title="[Heroes Unleashed]">
+
+<h2 class="atx" id="generaland39s-dossier"><strong><em>General's Dossier</em></strong></h2>
+<h3 class="atx" id="generaland39s-statistics"><strong><em>General's Statistics</em></strong></h3>
+<h4 class="atx" id="table-of-generalsand39s-statistics"><strong><em>Table of Generals's Statistics</em></strong></h4>
+<p><img title="Heroes" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/7e79f8ea0bf87409bbc0ebc1ec953e758cfcae65.jpg"></p>
+<h3 class="atx" id="generalsand39s-description-attributes-and-skills"><strong><em>Generals's Description, Attributes and Skills</em></strong></h3>
+<h4 class="atx" id="orhan-andquotkangalandquot-demir"><strong><em>Orhan "Kangal" Demir</em></strong></h4>
+<p><br><img data-align="center" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/458d1c91c945c8f371961adce30983a1f8a90041.jpg" title="[Orhan"></p>
+<img data-align="inline" alt="" src="https://www.supremacy1914.com/uploads/pics/1724407523_news_images_31472.jpg" title="[Orhan">
+
+<h4 class="atx" id="henry-andquothankandquot-callahan"><strong><em>Henry "Hank" Callahan</em></strong></h4>
+<p><br>&lt;img src="<a href="https://clan.fastly.steamstatic.com/images//34123292/6f5a2b373f34c1294c56f656087209b0505417f6.jpg&quot;">https://clan.fastly.steamstatic.com/images//34123292/6f5a2b373f34c1294c56f656087209b0505417f6.jpg"</a> title="[Henry "Hank" Callahan] - [Hero]" alt="" data-align="center"&gt;<br></p>
+<img data-align="inline" alt="" src="https://www.supremacy1914.com/uploads/pics/1724855175_news_images_31498.jpg" title="[Henry">
+
+<h4 class="atx" id="georg-andquotbreakthrough-mullerandquot-bruchmuller"><strong><em>Georg "Breakthrough-Müller" Bruchmüller</em></strong></h4>
+<p>&lt;img src="<a href="https://clan.fastly.steamstatic.com/images//34123292/235f8f59ba8a6a68a9734b4e693e0bd6eedfc741.jpg&quot;">https://clan.fastly.steamstatic.com/images//34123292/235f8f59ba8a6a68a9734b4e693e0bd6eedfc741.jpg"</a> title="[Georg "Breakthrough-Müller" Bruchmüller] - [Hero]" alt="" data-align="center"&gt;</p>
+<img data-align="inline" alt="" src="https://www.supremacy1914.com/uploads/pics/1725373643_news_images_31551.jpg" title="[Georg">
+
+<h4 class="atx" id="t-e-lawrence-andquotof-arabiaandquot"><strong><em>T. E. Lawrence "of Arabia"</em></strong></h4>
+<p><img data-align="center" alt="" title="[T. E. Lawrence] - [Hero]" src="https://clan.fastly.steamstatic.com/images//34123292/b23392184e5798555a0708427427c2154f9788fa.jpg"><br></p>
+<img data-align="center" alt="" title="[T. E. Lawrence] - [Skills]" src="https://www.supremacy1914.com/uploads/pics/1725374066_news_images_31552.jpg">
+
+<h4 class="atx" id="fiero-andquotmarcoandquot-martello"><strong><em>Fiero "Marco" Martello</em></strong></h4>
+<p><img data-align="center" alt="" title="[Fiero “Marco” Martello] - [Hero]" src="https://clan.fastly.steamstatic.com/images//34123292/81b3c281c4e4299e1d79dba0ebd8900e9bed7880.jpg"><br></p>
+<img data-align="center" alt="" title="[Fiero “Marco” Martello] - [Skills]" src="https://www.supremacy1914.com/uploads/pics/1730456631_news_images_32316.jpg">
+
+<h4 class="atx" id="joseph-joffre"><strong><em>Joseph Joffre</em></strong></h4>
+<p><img data-align="center" alt="" title="[Joseph Joffre] - [Hero]" src="https://clan.fastly.steamstatic.com/images//34123292/36040b8aba3492a7e29cf00ef08a0d6b17750376.jpg"><br></p>
+<img data-align="center" alt="" title="[Joseph Joffre] - [Skills]" src="https://www.supremacy1914.com/uploads/pics/1730456579_news_images_32315.jpg">
+
+<h4 class="atx" id="tatiana-minchakievich"><strong><em>Tatiana Minchakievich</em></strong></h4>
+<p><img data-align="center" alt="" title="[Tatiana Minchakievich] - [Hero]" src="https://clan.fastly.steamstatic.com/images//34123292/371c6e4af0989a262d8747ae0baf11c2c5fc2f75.jpg"><br></p>
+<img data-align="center" alt="" title="[Tatiana Minchakievich] - [Skills]" src="https://www.supremacy1914.com/uploads/pics/1730993494_news_images_32372.jpg">
+
+<h4 class="atx" id="togo-heihachiro"><strong><em>Togo Heihachiro</em></strong></h4>
+<p><img data-align="center" alt="" title="[Tōgō Heihachirō] - [Hero]" src="https://clan.fastly.steamstatic.com/images//34123292/828a24c221f1b82665c9a9d6ca43c83020fdf1f7.jpg"><br></p>
+<img data-align="center" alt="" title="[Tōgō Heihachirō] - [Skills]" src="https://www.supremacy1914.com/uploads/pics/1733480289_news_images_32783.jpg">
+
+<h4 class="atx" id="john-j-pershing"><strong><em>John J. Pershing</em></strong></h4>
+<p><img data-align="center" alt="" title="[Josh J. Pershing]" src="https://clan.fastly.steamstatic.com/images//34123292/34fd79ec8bb060608b91faaac1103aa40af439a9.jpg"><br></p>
+<p><img data-align="center" alt="" title="[John J. Pershing] - [Skills]" src="https://www.supremacy1914.com/uploads/pics/1734088989_news_images_32842.jpg"><br></p>
+<hr>
+<hr>
+<h2 class="atx" id="premium"><strong><em>Premium</em></strong></h2>
+<hr>
+<hr>
+<p><strong><em>§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§</em></strong></p>
+<p><strong><em>§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§</em></strong></p>
+<h2 class="atx" id="first-comment-notice"><strong><em>First Comment Notice</em></strong></h2>
+<p>This <strong><em>Pocket Manual</em></strong> was written and kept updated by members of this <strong><em>Subreddit</em></strong> to members of the same community. Please be respectful when indicating something that might be wrong or outdated. Swift measures will be taken to resolve the issue, and the members that helped in its resolution will be added to the <strong><em>War Memorial</em></strong>.</p>
+<hr>
+<h2 class="atx" id="war-memorial"><strong><em>War Memorial</em></strong></h2>
+<table>
+<thead>
+<tr>
+<th align="center"><strong><em>General</em></strong>&nbsp;u/Legarkicdinas</th>
+<th align="center"><strong><em>General</em></strong> u/Master_Beginning706</th>
+<th align="center"><strong><em>General</em></strong> u/Hot_Lemon_7564</th>
+<th align="center"><strong><em>General</em></strong> u/</th>
+<th align="center"><strong><em>General</em></strong> u/</th>
+<th align="center"><strong><em>General</em></strong> u/</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+</tr>
+<tr>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+</tr>
+<tr>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+<td align="center"><strong><em>General</em></strong> u/</td>
+</tr>
+</tbody></table>
+<hr>
+<p><img alt="" src="https://d2duuy9yo5pldo.cloudfront.net/bytro/5e4492f9-43a4-4e4b-b4ff-c339ef1f768c.jpg"></p>
+<p><img alt="" src="https://d2duuy9yo5pldo.cloudfront.net/bytro/fad5a707-b1bb-4571-b1e3-a1a685d237ef.jpg"></p>
+<p><img title="[Winter Cease Fire]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/7c218e4fe6ce58e92473844eb88a344dc1abb8a3.jpg"></p>
+<p><img title="[Heroic Insights]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/f157d396515694e879597e30f936f8a608498a37.jpg"></p>
+<p><img title="[Rise of Heroes]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/a027e8f18d978805ebe232584403d65108d08baf.jpg"></p>
+<p><img title="[Heroes's Upgrades]" alt="" src="https://www.supremacy1914.com/uploads/pics/1723045112_news_images_31333.jpg"></p>
+<p><img title="[Unlock and Deploy]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/2c04e72055c42863a24d51197b33a5af1f2dd9a2.jpg"></p>
+<p><img title="[What is to Come]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/69a061b6c39570447e9549edd9d6a85da33687cb.jpg"></p>
+<p><img title="[Heroes and Generals]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/ba892b7ce531979d6b46bebfd8afef98e75a7901.png"></p>
+<p><img title="[Birthday Celebration]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/a60ff240c71f59e1b7d44c73fb7f9a23689d1a37.jpg"></p>
+<p><img title="[Zeppelins] - [Unit] - [4]" alt="" src="https://www.supremacy1914.com/uploads/pics/1715596117_news_images_30535.jpg"></p>
+<p><img title="[Zeppelin] - [Unit] - [3]" alt="" src="https://www.supremacy1914.com/uploads/pics/1715584353_news_images_30521.jpg"></p>
+<p><img title="[Zeppelin] - [Unit] - [2]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/e10dde3174bcdb1e4e4155ba9085a3004e4b2f2d.jpg"></p>
+<p><img title="[Zeppelin] - [Unit] - [1]" alt="" src="https://clan.fastly.steamstatic.com/images//34123292/ed90ac5587f8d5e7c3079a46a870fb09a7acf903.jpg"></p>
+<p><strong><em>§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§</em></strong></p>
+<p><strong><em>§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§</em></strong></p>
+</article>
+</body>
+</html>
